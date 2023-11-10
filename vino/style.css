@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	background-color: #1A1A1A;
 	font-family: 'Josefin Sans', sans-serif;
+
 	@font-face {
 		font-family: 'Yaniko';
 		src: url('fonts/Yaniko.ttf');
@@ -12,22 +13,27 @@ body {
 /* For mobile phones: */
 @media only screen and (max-width: 992px) {
 
-/* BARRAS ARRIBA Y ABAJO*/
-	nav {
-		margin-top: 0;
+	/* BARRAS ARRIBA Y ABAJO*/
+	nnav {
+		margin: 0;
 		width: 100vw;
 		height: 100vh;
+
+
 
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: nowrap;
+
 	}
 
 	nav {
 		position: fixed;
+		z-index: 100;
 	}
+
 
 	nav #der {
 		background-color: #1A1A1A;
@@ -90,6 +96,8 @@ body {
 		cursor: pointer;
 	}
 
+
+
 	nav #iz {
 		height: 5vh;
 		width: 100vw;
@@ -99,13 +107,6 @@ body {
 		background-repeat: no-repeat;
 		background-color: #1A1A1A;
 		border-top: 1px solid #EEEAE6;
-	}
-
-	main {
-		display: flex;
-		flex-direction: column;
-		padding-top: 5.5vh;
-		padding-bottom: 5.5vh;
 	}
 
 	main div {
@@ -120,7 +121,7 @@ body {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
-/*BARRAS LATERALES*/
+	/*BARRAS LATERALES*/
 	nav {
 		margin-top: 0;
 		width: 100vw;
@@ -134,6 +135,7 @@ body {
 
 	nav {
 		position: fixed;
+		z-index: 100;
 	}
 
 	nav #der #boton-hamburguesa {
@@ -146,7 +148,8 @@ body {
 
 	nav #der {
 		height: 100vh;
-		width: 8vw;
+		width: 6vw;
+		background-color: #1A1A1A;
 
 		display: flex;
 		flex-direction: column;
@@ -180,7 +183,7 @@ body {
 
 	nav #der #logo img {
 		padding-top: 20px;
-		width: 4.5vw;
+		width: 4vw;
 	}
 
 	nav #der ul a {
@@ -209,13 +212,15 @@ body {
 
 	nav #iz {
 		height: 100vh;
-		width: 8vw;
+		width: 6vw;
+		background-color: #1A1A1A;
 		background-image: url(img/saraTinauT.gif);
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
 		border-left: 2px solid #EEEAE6;
 	}
+
 
 	main {
 		display: flex;

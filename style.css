@@ -328,10 +328,6 @@ body {
 		width: 3vw;
 	}
 
-	main #trabajos img {
-		rotate: 3deg;
-	}
-
 	main .tra1 {
 		background-image: url(img/discogs.png);
 		background-repeat: no-repeat;
@@ -361,5 +357,8 @@ body {
 		background-image: url(img/tortuga.png);
 		background-repeat: no-repeat;
 		background-size: cover;
+	}
+	main a:hover{
+		background-color: aliceblue;
 	}
 }
