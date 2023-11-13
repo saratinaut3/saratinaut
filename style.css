@@ -17,10 +17,10 @@ body {
 /* For mobile phones: */
 @media only screen and (max-width: 992px) {
 	nav {
-	
+
 		margin: 0;
 		width: 100vw;
-		height: 100vh;
+		height: 5vh;
 
 		display: flex;
 		flex-direction: column;
@@ -68,7 +68,7 @@ body {
 		list-style: none;
 		background-color: #1A1A1A;
 		width: 100vw;
-		height: 90vh;
+		height: 100vh;
 	}
 
 	nav #der ul hr {
@@ -97,13 +97,22 @@ body {
 		cursor: pointer;
 	}
 
-	
+
 
 	#contenedoriz {
-	display: none;
+		width: 100vw;
+		height: 5vh;
+		position: absolute;
+		top: 95%;
 	}
 
-	
+	#contenedoriz #iz {
+		background-image: url(img/saraTinauT2.gif);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+
 
 
 
@@ -111,14 +120,22 @@ body {
 	:root {
 		--cards: 6;
 		--cardHeight: 90vh;
-		--cardTopPadding: 0.5em;
+		--cardTopPadding: 0.8em;
 		--cardMargin: 0;
+	}
+
+	main {
+		overflow-x: hidden;
+		display: flex;
+		display: flex;
+		justify-content: center;
 	}
 
 	.container {
 		height: 95vh;
-		width:100vw;
-		
+		width: 100vw;
+
+
 		margin-top: 0;
 		margin-left: 0;
 		margin-right: 0;
@@ -140,7 +157,7 @@ body {
 
 	#card1 {
 		--index: 1;
-		
+
 	}
 
 	#card2 {
@@ -167,7 +184,7 @@ body {
 
 	.card {
 		position: sticky;
-		
+
 		top: 0;
 		padding-top: calc(var(--index) * var(--cardTopPadding));
 	}
@@ -252,7 +269,7 @@ body {
 	}
 
 	/**/
-	
+
 
 
 	#trabajos img {
@@ -268,7 +285,7 @@ body {
 	.card-body {
 		box-sizing: border-box;
 		rotate: -2deg;
-		width: 100vw;
+		width: 120vw;
 		padding: 0;
 		height: var(--cardHeight);
 		display: flex;
@@ -333,10 +350,13 @@ body {
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-	body, html{
+
+	body,
+	html {
 		width: 100% !important;
 		overflow-x: hidden !important;
 	}
+
 	nav {
 		margin-top: 0;
 		width: 6vw;
