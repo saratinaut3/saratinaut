@@ -1,9 +1,8 @@
 body {
 	margin: 0;
-	padding: 0;
 	width: 100vw;
 	height: 100vh;
-
+	position: relative;
 	background-color: #1A1A1A;
 	font-family: 'Josefin Sans', sans-serif;
 
@@ -13,16 +12,15 @@ body {
 	}
 }
 
+
+
 /* For mobile phones: */
 @media only screen and (max-width: 992px) {
-
-	/* BARRAS ARRIBA Y ABAJO*/
 	nav {
+	
 		margin: 0;
 		width: 100vw;
 		height: 100vh;
-
-
 
 		display: flex;
 		flex-direction: column;
@@ -43,8 +41,8 @@ body {
 		height: 5vh;
 		width: 100vw;
 		border-bottom: 1px solid #EEEAE6;
-		padding-left: 3vw;
-		padding-right: 3vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
 
 		display: flex;
 		flex-direction: row;
@@ -99,108 +97,253 @@ body {
 		cursor: pointer;
 	}
 
+	
 
-
-	nav #iz {
-		height: 5vh;
-		width: 100vw;
-		background-image: url(img/saraTinauT2.gif);
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-color: #1A1A1A;
-		border-top: 1px solid #EEEAE6;
+	#contenedoriz {
+	display: none;
 	}
 
-	/*CUERPO*/
+	
 
-	main {
-		width: 100vw;
-		height: auto;
+
+
+	/* ---- MAIN ----*/
+	:root {
+		--cards: 6;
+		--cardHeight: 90vh;
+		--cardTopPadding: 0.5em;
+		--cardMargin: 0;
+	}
+
+	.container {
+		height: 95vh;
+		width:100vw;
+		
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+
+	#cards {
+		list-style: none;
+		padding-top: 0;
+		display: grid;
+
+		justify-content: center;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(var(--cards), var(--cardHeight));
+		gap: var(--cardMargin);
+		padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+		margin-bottom: var(--cardMargin);
+	}
+
+	#card1 {
+		--index: 1;
+		
+	}
+
+	#card2 {
+		--index: 2;
+	}
+
+	#card3 {
+		--index: 3;
+	}
+
+	#card4 {
+		--index: 4;
+	}
+
+	#card5 {
+		--index: 5;
+	}
+
+	#card6 {
+		--index: 6;
+	}
+
+
+
+	.card {
+		position: sticky;
+		
+		top: 0;
+		padding-top: calc(var(--index) * var(--cardTopPadding));
+	}
+
+	/* CABECERA*/
+
+	#cabecera {
+		margin-top: 40px;
 		display: flex;
 		flex-direction: column;
-
+		justify-content: center;
 		align-items: center;
-		flex-wrap: nowrap;
-
 	}
 
-	main #trabajos {
-		height: 94vh;
-		width: 120vw;
-		rotate: -3deg;
-		padding-right: 15vw;
-		padding-top: 4vh;
-		padding-bottom: 4vh;
-		display: flex;
-		justify-content: flex-end;
 
-
-	}
-
-	main #trabajos1 {
-		height: 94vh;
-
-	}
-
-	main #trabajos #flechas {
-		rotate: 3deg;
+	#cabecera .titulos {
+		margin-top: 35vw;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: center;
+		align-items: center;
+
 	}
 
-	main #trabajos img {
-		width: 5vw;
+	#cabecera h1 {
+		color: #EEEAE6;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 300;
+		font-size: 20px;
+		white-space: nowrap;
 	}
 
-	main .tra1 {
-		background-image: url(img/discogs.png);
+	#cabecera .abajo {
+		width: 35px;
+		height: 35px;
+		margin-top: 10px;
+		background: url(img/flechaB.png);
+		background-size: contain;
 		background-repeat: no-repeat;
+	}
+
+	#cabecera .abajo:hover {
+		transition: 0.3s;
+		background: url(img/flechaB2.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+
+	}
+
+	#cabecera .nombre {
+		background-image: url(img/nombre_home.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 70vw;
+		height: 38vh;
+		transition-property: background-image, rotate;
+		transition-duration: 1s;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#cabecera .nombre:hover {
+		background-image: url(img/nombre_home2.png);
+		transition: 2.5s;
+		rotate: 360deg;
+	}
+
+	#cabecera .nombre .portgif {
+		background-image: url(img/portfolio_home.gif);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 30vw;
+		height: 20vh;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/**/
+	
+
+
+	#trabajos img {
+		width: 35px;
+		height: 35px;
+	}
+
+	#card1 .card-body {
+		background-color: #1A1A1A;
+	}
+
+
+	.card-body {
+		box-sizing: border-box;
+		rotate: -2deg;
+		width: 100vw;
+		padding: 0;
+		height: var(--cardHeight);
+		display: flex;
+		align-items: stretch;
+		justify-content: flex-end;
+		transition: all 1s;
+	}
+
+
+
+	/*TRABAJO 1*/
+
+
+	#card2 .card-body {
+		background-image: url(img/vino2.png);
+		background-repeat: no-repeat;
+		background-position: center;
 		background-size: cover;
 	}
 
-	main .tra2 {
-		background-image: url(img/vino.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-		rotate: -3deg;
-	}
+	/*TRABAJO 2*/
 
-	main .tra3 {
-		background-image: url(img/revuelta.png);
+
+	#card3 .card-body {
+		background-image: url(img/revuelta2.png);
 		background-repeat: no-repeat;
+		background-position: center;
 		background-size: cover;
 	}
 
-	main .tra4 {
-		background-color: #A09A95;
+	/*TRABAJO 3*/
+
+
+	#card4 .card-body {
+		background-image: url(img/discogs2.png);
 		background-repeat: no-repeat;
+		background-position: center;
 		background-size: cover;
 	}
 
-	main .tra5 {
-		background-image: url(img/tortuga.png);
+	/*TRABAJO 4*/
+
+
+	#card5 .card-body {
+		background-image: url(img/helados2.png);
 		background-repeat: no-repeat;
+		background-position: center;
 		background-size: cover;
 	}
 
+	/*TRABAJO 5*/
 
+
+	#card6 .card-body {
+		background-image: url(img/tortuga2.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
 }
 
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
-
-	/*BARRAS LATERALES*/
+	body, html{
+		width: 100% !important;
+		overflow-x: hidden !important;
+	}
 	nav {
 		margin-top: 0;
-		width: 100vw;
+		width: 6vw;
 		height: 100vh;
 
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: center;
 	}
 
@@ -253,8 +396,13 @@ body {
 	}
 
 	nav #der #logo img {
-		padding-top: 20px;
+		padding-top: 40px;
 		width: 4vw;
+	}
+
+	nav #der #logo img:hover {
+		opacity: 50%;
+		transition: 1s;
 	}
 
 	nav #der ul a {
@@ -268,7 +416,8 @@ body {
 	}
 
 	nav #der ul li a:hover {
-		color: #A09A95;
+		opacity: 50%;
+		transition: 1s;
 	}
 
 	nav #der .contactos {
@@ -281,84 +430,270 @@ body {
 		font-size: 20px;
 	}
 
-	nav #iz {
-		height: 100vh;
+	nav #der .contactos:hover {
+		transition: 0.3s;
+		opacity: 85%;
+		color: #1A1A1A;
+	}
+
+	footer {
+		margin-top: 0;
+		margin-left: 0;
 		width: 6vw;
-		background-color: #1A1A1A;
-		background-image: url(img/saraTinauT.gif);
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		border-left: 2px solid #EEEAE6;
-	}
+		height: 100vh;
 
-
-
-	main {
-		width: 100vw;
-		height: auto;
-
-	}
-
-	main #trabajos {
-		height: 94vh;
-		rotate: -3deg;
-		padding-right: 7vw;
-		padding-top: 2vh;
-		padding-bottom: 2vh;
 		display: flex;
 		justify-content: flex-end;
+		align-items: center;
+	}
 
+	#contenedoriz {
+		display: flex;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-start;
 
 	}
 
-	main #trabajos1 {
-		height: 94vh;
-
+	#iz {
+		width: 6.5vw;
+		height: 100vh;
+		position: fixed;
+		z-index: 100;
+		background-color: #1A1A1A;
+		border-left: 2px solid #EEEAE6;
+		background-image: url(img/saraTinauT.gif);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
-	main #trabajos #flechas {
-		rotate: 3deg;
+
+
+	/* ---- MAIN ----*/
+	:root {
+		--cards: 6;
+		--cardHeight: 90vh;
+		--cardTopPadding: 0.5em;
+		--cardMargin: 0;
+	}
+
+	.container {
+		height: 100vh;
+		width: 100vw;
+
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 0;
+	}
+
+	#cards {
+		list-style: none;
+		padding-top: 0;
+		display: grid;
+
+		justify-content: center;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(var(--cards), var(--cardHeight));
+		gap: var(--cardMargin);
+		padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+		margin-bottom: var(--cardMargin);
+	}
+
+	#card1 {
+		--index: 1;
+		rotate: 0deg;
+	}
+
+	#card2 {
+		--index: 2;
+	}
+
+	#card3 {
+		--index: 3;
+	}
+
+	#card4 {
+		--index: 4;
+	}
+
+	#card5 {
+		--index: 5;
+	}
+
+	#card6 {
+		--index: 6;
+	}
+
+
+
+	.card {
+		position: sticky;
+		rotate: -2deg;
+		top: 0;
+		padding-top: calc(var(--index) * var(--cardTopPadding));
+	}
+
+	/* CABECERA*/
+
+	#cabecera {
+		margin-top: 40px;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: center;
+		align-items: center;
 	}
 
-	main #trabajos img {
-		width: 3vw;
+
+	#cabecera .titulos {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
 	}
 
-	main .tra1 {
-		background-image: url(img/discogs.png);
+	#cabecera h1 {
+		color: #EEEAE6;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 300;
+		font-size: 20px;
+		white-space: nowrap;
+	}
+
+	#cabecera .abajo {
+		width: 35px;
+		height: 35px;
+		margin-top: 10px;
+		background: url(img/flechaB.png);
+		background-size: contain;
 		background-repeat: no-repeat;
-		background-size: cover;
 	}
 
-	main .tra2 {
+	#cabecera .abajo:hover {
+		transition: 0.3s;
+		background: url(img/flechaB2.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+
+	}
+
+	#cabecera .nombre {
+		background-image: url(img/nombre_home.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 35vw;
+		height: 55vh;
+		transition-property: background-image, rotate;
+		transition-duration: 1s;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#cabecera .nombre:hover {
+		background-image: url(img/nombre_home2.png);
+		transition: 2.5s;
+		rotate: 360deg;
+	}
+
+	#cabecera .nombre .portgif {
+		background-image: url(img/portfolio_home.gif);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 14vw;
+		height: 20vh;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/**/
+	#trabajos {
+		padding-right: 9vw;
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+		display: flex;
+		justify-content: flex-end;
+	}
+
+
+	#trabajos img {
+		width: 35px;
+		height: 35px;
+	}
+
+	#card1 .card-body {
+		background-color: #1A1A1A;
+	}
+
+
+	.card-body {
+		box-sizing: border-box;
+		padding: 0;
+		height: var(--cardHeight);
+		display: flex;
+		align-items: stretch;
+		justify-content: flex-end;
+		transition: all 1s;
+	}
+
+
+
+	/*TRABAJO 1*/
+
+
+	#card2 .card-body {
 		background-image: url(img/vino.png);
 		background-repeat: no-repeat;
+		background-position: center;
 		background-size: cover;
-		rotate: -3deg;
 	}
 
-	main .tra3 {
+	/*TRABAJO 2*/
+
+
+	#card3 .card-body {
 		background-image: url(img/revuelta.png);
 		background-repeat: no-repeat;
+		background-position: center;
 		background-size: cover;
 	}
 
-	main .tra4 {
-		background-color: #A09A95;
+	/*TRABAJO 3*/
+
+
+	#card4 .card-body {
+		background-image: url(img/discogs.png);
 		background-repeat: no-repeat;
+		background-position: center;
 		background-size: cover;
 	}
 
-	main .tra5 {
+	/*TRABAJO 4*/
+
+
+	#card5 .card-body {
+		background-image: url(img/helados.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	/*TRABAJO 5*/
+
+
+	#card6 .card-body {
 		background-image: url(img/tortuga.png);
 		background-repeat: no-repeat;
+		background-position: center;
 		background-size: cover;
 	}
-	main a:hover{
-		background-color: aliceblue;
-	}
+
+
 }

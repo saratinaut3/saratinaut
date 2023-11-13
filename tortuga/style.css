@@ -1,6 +1,9 @@
 body {
 	margin: 0;
 	padding: 0;
+	width: 100vw;
+	height: 100vh;
+
 	background-color: #1A1A1A;
 	font-family: 'Josefin Sans', sans-serif;
 
@@ -14,12 +17,10 @@ body {
 @media only screen and (max-width: 992px) {
 
 	/* BARRAS ARRIBA Y ABAJO*/
-	nnav {
+	nav {
 		margin: 0;
 		width: 100vw;
 		height: 100vh;
-
-
 
 		display: flex;
 		flex-direction: column;
@@ -109,11 +110,79 @@ body {
 		border-top: 1px solid #EEEAE6;
 	}
 
-	main div {
+	/*CUERPO*/
+
+	main {
 		width: 100vw;
-		height: 89vh;
-		background-color: rgb(9, 86, 47);
+		height: auto;
+		display: flex;
+		flex-direction: column;
+
+		align-items: center;
+		flex-wrap: nowrap;
+
 	}
+
+	main #trabajos {
+		height: 94vh;
+		width: 120vw;
+		rotate: -3deg;
+		padding-right: 15vw;
+		padding-top: 4vh;
+		padding-bottom: 4vh;
+		display: flex;
+		justify-content: flex-end;
+
+
+	}
+
+	main #trabajos1 {
+		height: 94vh;
+
+	}
+
+	main #trabajos #flechas {
+		rotate: 3deg;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	main #trabajos img {
+		width: 5vw;
+	}
+
+	main .tra1 {
+		background-image: url(img/discogs.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	main .tra2 {
+		background-image: url(img/vino.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		rotate: -3deg;
+	}
+
+	main .tra3 {
+		background-image: url(img/revuelta.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	main .tra4 {
+		background-color: #A09A95;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	main .tra5 {
+		background-image: url(img/tortuga.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 
 }
 
@@ -221,18 +290,145 @@ body {
 		border-left: 2px solid #EEEAE6;
 	}
 
-
 	main {
+		width: 100vw;
+		height: auto;
+	}
+
+	
+
+	main #trabajos1 {
+		height: 94vh;
+
+
 		display: flex;
 		flex-direction: column;
-		margin-left: 8.5vw;
-		margin-right: 8.5vw;
+		justify-content: center;
+		align-items: center;
 	}
 
-	main div {
-		width: 83vw;
-		height: 100vh;
-		background-color: rgb(9, 86, 47);
+
+	main #trabajos1 .titulos {
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
 	}
 
+	main #trabajos1 h1 {
+
+		color: #EEEAE6;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 300;
+		font-size: 25px;
+		white-space: nowrap;
+	}
+
+	main #trabajos1 .abajo  {
+		width: 35px;
+		height: 35px;
+		margin-top: 10px;
+		background: url(img/flechaB.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	main #trabajos1 .abajo:hover {
+		transition: 0.3s;
+		background: url(img/flechaB2.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		
+	}
+
+
+
+
+	main #trabajos1 .nombre {
+		background-image: url(img/nombre_home.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 35vw;
+		height: 55vh;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	main #trabajos1 .nombre .portgif {
+
+		background-image: url(img/portfolio_home.gif);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 14vw;
+		height: 20vh;
+		border: #A09A95;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	main #trabajos {
+		height: 94vh;
+		rotate: -3deg;
+		padding-right: 9vw;
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+		display: flex;
+		justify-content: flex-end;
+		
+	}
+
+	main #trabajos #flechas {
+		rotate: 3deg;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	main #trabajos img {
+		width: 35px;
+		height: 35px;
+	}
+
+	main .tra1 {
+		background-image: url(img/vino.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		
+	}
+
+	main .tra2 {
+		background-image: url(img/revuelta.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		
+	}
+
+	main .tra3 {
+		background-image: url(img/discogs.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	main .tra4 {
+		background-image: url(img/helados.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	main .tra5 {
+		background-image: url(img/tortuga.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	main a:hover {
+		background-color: aliceblue;
+	}
 }

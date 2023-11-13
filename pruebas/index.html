@@ -1,30 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Contenedores de Pantalla Completa al Hacer Scroll</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divs Animados con Scroll</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .contenedor {
+      width: 95vw;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .superpuesto {
+      width: 100%;
+      height: 95vh;
+      margin-bottom: 20vh; /* Espacio entre divs */
+      position: relative;
+      opacity: 0;
+      animation: aparecer 0.5s ease-in-out forwards;
+    }
+
+    .superpuesto:nth-child(even) {
+      background-color: #f0f0f0; /* Color del fondo para divs pares */
+    }
+
+    .superpuesto:nth-child(odd) {
+      background-color: #ccc; /* Color del fondo para divs impares */
+    }
+
+    @keyframes aparecer {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div id="container" class="container1">
-        <h1>Contenedor 1</h1>
-    </div>
-    <div id="container" class="container2">
-        <h1>Contenedor 2</h1>
-    </div>
-    <div id="container" class="container3">
-        <h1>Contenedor 3</h1>
-    </div>
+  <div class="contenedor">
+    <div class="superpuesto"></div>
+    <div class="superpuesto"></div>
+    <div class="superpuesto"></div>
+    <div class="superpuesto"></div>
+    <div class="superpuesto"></div>
+    <div class="superpuesto"></div>
+  </div>
+  <script>
+    window.addEventListener('scroll', function() {
+      var superpuestos = document.querySelectorAll('.superpuesto');
+
+      superpuestos.forEach(function(superpuesto, index) {
+        var rect = superpuesto.getBoundingClientRect();
+        var top = rect.top;
+
+        if (top <= window.innerHeight * 0.8) {
+          superpuesto.style.animation = ''; // Elimina la animación para que no se repita
+        }
+      });
+    });
+  </script>
 </body>
-<script>
-    <window.addEventListener('scroll', function() {
-    const scrollY = window.scrollY;
-    if (scrollY > 100) {
-        document.body.classList.add('scrolled');
-    } else {
-        document.body.classList.remove('scrolled');
-    }
-});
-</script>
 </html>
