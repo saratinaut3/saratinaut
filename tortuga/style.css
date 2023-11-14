@@ -1,9 +1,8 @@
 body {
 	margin: 0;
-	padding: 0;
 	width: 100vw;
 	height: 100vh;
-
+	position: relative;
 	background-color: #1A1A1A;
 	font-family: 'Josefin Sans', sans-serif;
 
@@ -13,14 +12,15 @@ body {
 	}
 }
 
+
+
 /* For mobile phones: */
 @media only screen and (max-width: 992px) {
-
-	/* BARRAS ARRIBA Y ABAJO*/
 	nav {
+
 		margin: 0;
 		width: 100vw;
-		height: 100vh;
+		height: 5vh;
 
 		display: flex;
 		flex-direction: column;
@@ -41,8 +41,8 @@ body {
 		height: 5vh;
 		width: 100vw;
 		border-bottom: 1px solid #EEEAE6;
-		padding-left: 3vw;
-		padding-right: 3vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
 
 		display: flex;
 		flex-direction: row;
@@ -63,12 +63,12 @@ body {
 	nav #der ul {
 		display: none;
 		position: absolute;
-		top: 5.5vh;
+		top: 5vh;
 		right: 0;
 		list-style: none;
 		background-color: #1A1A1A;
 		width: 100vw;
-		height: 90vh;
+		height: 100vh;
 	}
 
 	nav #der ul hr {
@@ -99,88 +99,34 @@ body {
 
 
 
-	nav #iz {
-		height: 5vh;
+	#contenedoriz {
+		border-top: 1px solid #EEEAE6;
 		width: 100vw;
+		height: 5vh;
+		position: absolute;
+		top: 95%;
+	}
+
+	#contenedoriz #iz {
+		width: 100vw;
+		height: 5vh;
+		background-color:#1A1A1A;
 		background-image: url(img/saraTinauT2.gif);
+		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
-		background-repeat: no-repeat;
-		background-color: #1A1A1A;
-		border-top: 1px solid #EEEAE6;
 	}
 
-	/*CUERPO*/
 
-	main {
-		width: 100vw;
-		height: auto;
+
+
+	/* ---- MAIN ----*/
+	.container{
+		padding-top: 6vh;
+		
+		color: #EEEAE6;
 		display: flex;
-		flex-direction: column;
-
 		align-items: center;
-		flex-wrap: nowrap;
-
-	}
-
-	main #trabajos {
-		height: 94vh;
-		width: 120vw;
-		rotate: -3deg;
-		padding-right: 15vw;
-		padding-top: 4vh;
-		padding-bottom: 4vh;
-		display: flex;
-		justify-content: flex-end;
-
-
-	}
-
-	main #trabajos1 {
-		height: 94vh;
-
-	}
-
-	main #trabajos #flechas {
-		rotate: 3deg;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
-	main #trabajos img {
-		width: 5vw;
-	}
-
-	main .tra1 {
-		background-image: url(img/discogs.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	main .tra2 {
-		background-image: url(img/vino.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-		rotate: -3deg;
-	}
-
-	main .tra3 {
-		background-image: url(img/revuelta.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	main .tra4 {
-		background-color: #A09A95;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	main .tra5 {
-		background-image: url(img/tortuga.png);
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 
 
@@ -190,15 +136,19 @@ body {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
-	/*BARRAS LATERALES*/
+	body,
+	html {
+		width: 100% !important;
+		overflow-x: hidden !important;
+	}
+
 	nav {
 		margin-top: 0;
-		width: 100vw;
+		width: 6vw;
 		height: 100vh;
 
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: center;
 	}
 
@@ -251,8 +201,13 @@ body {
 	}
 
 	nav #der #logo img {
-		padding-top: 20px;
+		padding-top: 40px;
 		width: 4vw;
+	}
+
+	nav #der #logo img:hover {
+		opacity: 50%;
+		transition: 1s;
 	}
 
 	nav #der ul a {
@@ -266,7 +221,8 @@ body {
 	}
 
 	nav #der ul li a:hover {
-		color: #A09A95;
+		opacity: 50%;
+		transition: 1s;
 	}
 
 	nav #der .contactos {
@@ -279,156 +235,44 @@ body {
 		font-size: 20px;
 	}
 
-	nav #iz {
-		height: 100vh;
-		width: 6vw;
-		background-color: #1A1A1A;
-		background-image: url(img/saraTinauT.gif);
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		border-left: 2px solid #EEEAE6;
-	}
-
-	main {
-		width: 100vw;
-		height: auto;
-	}
-
-	
-
-	main #trabajos1 {
-		height: 94vh;
-
-
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-
-	main #trabajos1 .titulos {
-
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-
-	}
-
-	main #trabajos1 h1 {
-
-		color: #EEEAE6;
-		font-family: 'Josefin Sans', sans-serif;
-		font-weight: 300;
-		font-size: 25px;
-		white-space: nowrap;
-	}
-
-	main #trabajos1 .abajo  {
-		width: 35px;
-		height: 35px;
-		margin-top: 10px;
-		background: url(img/flechaB.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-	}
-	main #trabajos1 .abajo:hover {
+	nav #der .contactos:hover {
 		transition: 0.3s;
-		background: url(img/flechaB2.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-		
+		opacity: 85%;
+		color: #1A1A1A;
 	}
 
-
-
-
-	main #trabajos1 .nombre {
-		background-image: url(img/nombre_home.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: contain;
-		width: 35vw;
-		height: 55vh;
-
+	#contenedoriz {
 		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	main #trabajos1 .nombre .portgif {
-
-		background-image: url(img/portfolio_home.gif);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: contain;
-		width: 14vw;
-		height: 20vh;
-		border: #A09A95;
-
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	main #trabajos {
-		height: 94vh;
-		rotate: -3deg;
-		padding-right: 9vw;
-		padding-top: 10vh;
-		padding-bottom: 10vh;
 		display: flex;
 		justify-content: flex-end;
-		
+		align-items: flex-start;
+
 	}
 
-	main #trabajos #flechas {
-		rotate: 3deg;
+	#iz {
+		width: 6.5vw;
+		height: 100vh;
+		position: fixed;
+		z-index: 100;
+		background-color: #1A1A1A;
+		border-left: 2px solid #EEEAE6;
+		background-image: url(img/saraTinauT.gif);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+
+
+	/* ---- MAIN ----*/
+	
+	.container{
+		padding-left: 12vh;
+		padding-right: 6vh;
+		color: #EEEAE6;
 		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
+		align-items: center;
 	}
 
-	main #trabajos img {
-		width: 35px;
-		height: 35px;
-	}
 
-	main .tra1 {
-		background-image: url(img/vino.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-
-		
-	}
-
-	main .tra2 {
-		background-image: url(img/revuelta.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-		
-	}
-
-	main .tra3 {
-		background-image: url(img/discogs.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	main .tra4 {
-		background-image: url(img/helados.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	main .tra5 {
-		background-image: url(img/tortuga.png);
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	main a:hover {
-		background-color: aliceblue;
-	}
 }

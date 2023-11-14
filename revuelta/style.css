@@ -1,6 +1,8 @@
 body {
 	margin: 0;
-	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	position: relative;
 	background-color: #1A1A1A;
 	font-family: 'Josefin Sans', sans-serif;
 
@@ -10,16 +12,15 @@ body {
 	}
 }
 
+
+
 /* For mobile phones: */
 @media only screen and (max-width: 992px) {
+	nav {
 
-	/* BARRAS ARRIBA Y ABAJO*/
-	nnav {
 		margin: 0;
 		width: 100vw;
-		height: 100vh;
-
-
+		height: 5vh;
 
 		display: flex;
 		flex-direction: column;
@@ -40,8 +41,8 @@ body {
 		height: 5vh;
 		width: 100vw;
 		border-bottom: 1px solid #EEEAE6;
-		padding-left: 3vw;
-		padding-right: 3vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
 
 		display: flex;
 		flex-direction: row;
@@ -62,12 +63,12 @@ body {
 	nav #der ul {
 		display: none;
 		position: absolute;
-		top: 5.5vh;
+		top: 5vh;
 		right: 0;
 		list-style: none;
 		background-color: #1A1A1A;
 		width: 100vw;
-		height: 90vh;
+		height: 100vh;
 	}
 
 	nav #der ul hr {
@@ -98,22 +99,36 @@ body {
 
 
 
-	nav #iz {
-		height: 5vh;
-		width: 100vw;
-		background-image: url(img/saraTinauT2.gif);
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-color: #1A1A1A;
+	#contenedoriz {
 		border-top: 1px solid #EEEAE6;
+		width: 100vw;
+		height: 5vh;
+		position: absolute;
+		top: 95%;
 	}
 
-	main div {
+	#contenedoriz #iz {
 		width: 100vw;
-		height: 89vh;
-		background-color: rgb(9, 86, 47);
+		height: 5vh;
+		background-color:#1A1A1A;
+		background-image: url(img/saraTinauT2.gif);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
+
+
+
+
+	/* ---- MAIN ----*/
+	.container{
+		padding-top: 6vh;
+		
+		color: #EEEAE6;
+		display: flex;
+		align-items: center;
+	}
+
 
 }
 
@@ -121,15 +136,19 @@ body {
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
-	/*BARRAS LATERALES*/
+	body,
+	html {
+		width: 100% !important;
+		overflow-x: hidden !important;
+	}
+
 	nav {
 		margin-top: 0;
-		width: 100vw;
+		width: 6vw;
 		height: 100vh;
 
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: center;
 	}
 
@@ -182,8 +201,13 @@ body {
 	}
 
 	nav #der #logo img {
-		padding-top: 20px;
+		padding-top: 40px;
 		width: 4vw;
+	}
+
+	nav #der #logo img:hover {
+		opacity: 50%;
+		transition: 1s;
 	}
 
 	nav #der ul a {
@@ -197,7 +221,8 @@ body {
 	}
 
 	nav #der ul li a:hover {
-		color: #A09A95;
+		opacity: 50%;
+		transition: 1s;
 	}
 
 	nav #der .contactos {
@@ -210,29 +235,44 @@ body {
 		font-size: 20px;
 	}
 
-	nav #iz {
+	nav #der .contactos:hover {
+		transition: 0.3s;
+		opacity: 85%;
+		color: #1A1A1A;
+	}
+
+	#contenedoriz {
+		display: flex;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-start;
+
+	}
+
+	#iz {
+		width: 6.5vw;
 		height: 100vh;
-		width: 6vw;
+		position: fixed;
+		z-index: 100;
 		background-color: #1A1A1A;
+		border-left: 2px solid #EEEAE6;
 		background-image: url(img/saraTinauT.gif);
-		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
-		border-left: 2px solid #EEEAE6;
+		background-size: cover;
 	}
 
 
-	main {
+
+	/* ---- MAIN ----*/
+	
+	.container{
+		padding-left: 12vh;
+		padding-right: 6vh;
+		color: #EEEAE6;
 		display: flex;
-		flex-direction: column;
-		margin-left: 8.5vw;
-		margin-right: 8.5vw;
+		align-items: center;
 	}
 
-	main div {
-		width: 83vw;
-		height: 100vh;
-		background-color: rgb(9, 86, 47);
-	}
 
 }
