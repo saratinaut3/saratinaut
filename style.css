@@ -678,6 +678,13 @@ body {
 		background-position: center;
 		background-size: cover;
 	}
+	#card2 .card-body:hover{
+		transition: 2s;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size:105%;
+	}
+	
 
 	/*TRABAJO 2*/
 
@@ -689,6 +696,12 @@ body {
 		background-size: cover;
 	}
 
+	#card3 .card-body:hover{
+		transition: 2s;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size:105%;
+	}
 	/*TRABAJO 3*/
 
 
@@ -697,6 +710,13 @@ body {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+	}
+
+	#card4 .card-body:hover{
+		transition: 2s;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size:105%;
 	}
 
 	/*TRABAJO 4*/
@@ -709,6 +729,13 @@ body {
 		background-size: cover;
 	}
 
+	#card5 .card-body:hover{
+		transition: 2s;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size:105%;
+	}
+
 	/*TRABAJO 5*/
 
 
@@ -719,5 +746,11 @@ body {
 		background-size: cover;
 	}
 
+	#card6 .card-body:hover{
+		transition: 2s;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size:105%;
+	}
 
 }
