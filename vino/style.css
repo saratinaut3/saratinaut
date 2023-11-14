@@ -105,12 +105,14 @@ body {
 		height: 5vh;
 		position: absolute;
 		top: 95%;
+		position: fixed;
+		z-index: 100;
 	}
 
 	#contenedoriz #iz {
 		width: 100vw;
 		height: 5vh;
-		background-color:#1A1A1A;
+		background-color: #1A1A1A;
 		background-image: url(img/saraTinauT2.gif);
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -121,14 +123,132 @@ body {
 
 
 	/* ---- MAIN ----*/
-	.container{
-		padding-top: 6vh;
-		
+
+	#titulo {
+		padding-left: 15%;
+		width: 100vw;
+		height: 12vh;
+		display: flex;
+		align-items: flex-end;
+	
+	}
+
+	#titulo div {
+		rotate: -2deg;
+		background-color: #EEEAE6;
+		border-radius: 30px;
+		width: 25vw;
+		height: 4vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #1A1A1A;
+	}
+
+	#titulo div h1{
+		font-size: 20px;
+	}
+
+	.container {
+		padding-top: 3vh;
+
 		color: #EEEAE6;
 		display: flex;
 		align-items: center;
 	}
 
+	.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	.container hr {
+		width: 100vw;
+		rotate: -2deg;
+		border: 1px solid #EEEAE6;
+	}
+
+	.container #horizontal {
+		/*border: 1px solid chartreuse;*/
+		width: 100vw;
+	}
+
+	.container #horizontal #vertical {
+		/*border: 1px solid rgb(255, 85, 0);*/
+		width: 90vw;
+	
+		margin-bottom:10px;
+		margin-top:10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.container #horizontal .yo{
+		height: 50vh;
+	}
+	.container #horizontal .yo2{
+		height: auto;
+	}
+
+
+	.container .p1 {
+	    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+	}
+
+	.container #horizontal .yo {
+		height: 50vh;
+		background-image: url(img/intro.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.container #horizontal .yo2 h2 {
+		height: auto;
+		color: #EEEAE6;
+		font-family: 'Yaniko';
+
+
+	}
+
+	.container #horizontal .yo2 p {
+		color: #EEEAE6;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 200;
+		font-size: 20px;
+		padding-left: 30px;
+		padding-right: 30px;
+
+	}
+
+	.container #horizontal #vertical2 {
+		/*border: 1px solid rgb(255, 85, 0);*/
+		width: 90vw;
+		
+		margin-right: 5px;
+		margin-top: 10px;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+
+	.container .p2 {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+padding-bottom: 8vh;
+	}
 
 }
 
@@ -265,14 +385,153 @@ body {
 
 
 	/* ---- MAIN ----*/
-	
-	.container{
-		padding-left: 12vh;
-		padding-right: 6vh;
-		color: #EEEAE6;
+
+	#titulo {
+		padding-left: 15%;
+		width: 100vw;
+		height: 15vh;
 		display: flex;
 		align-items: center;
 	}
 
+	#titulo div {
+		rotate: -2deg;
+		background-color: #EEEAE6;
+		border-radius: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: auto;
+		height: 6vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #1A1A1A;
+	}
 
+	/**#titulo hr{
+width: 100vw;
+rotate: -2deg;
+position: absolute;
+
+left: 5%;
+border: 1px solid  #EEEAE6;
+	}*/
+
+	.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	.container hr {
+		
+		width: 100vw;
+		rotate: -2deg;
+		border: 1px solid #EEEAE6;
+	}
+
+	.container #horizontal {
+		/*border: 1px solid chartreuse;*/
+		width: 100vw;
+	}
+
+	.container #horizontal #vertical {
+		/*border: 1px solid rgb(255, 85, 0);*/
+		width: 43vw;
+		height: 65vh;
+
+		margin-right: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container .p1 {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		
+	}
+
+	.container #horizontal .yo {
+		background-image: url(img/intro.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.container #horizontal .yo2 h2 {
+		color: #EEEAE6;
+		font-family: 'Yaniko';
+		
+
+
+	}
+
+	.container #horizontal .yo2 p {
+		color: #EEEAE6;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 200;
+		font-size: 20px;
+		padding-left: 30px;
+		padding-right: 30px;
+
+	}
+
+	.container #horizontal #vertical2{
+		width: 100vw;
+		height: 85vh;
+		rotate: -2deg;
+		background-color: aqua;
+		background-image: url(img/1.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.container #horizontal .yo3 {
+		margin-top: 15px;
+		background-image: url(img/delante.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	.container #horizontal #vertical3{
+		margin: auto;
+		width: 90vw;
+		height: 90vh;
+		rotate: -2deg;
+		background-color: aqua;
+		background-image: url(img/2.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.container #horizontal #vertical4{
+		width: 100vw;
+		height: 85vh;
+		rotate: -2deg;
+		background-color: aqua;
+		background-image: url(img/3.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	
+	.container #horizontal #vertical5{
+		margin: auto;
+		width: 90vw;
+		height: 90vh;
+		rotate: -2deg;
+		background-color: aqua;
+		background-image: url(img/4.png);
+		background-position: center;
+		
+		background-size: cover;
+	}
 }
