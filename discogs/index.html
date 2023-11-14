@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tipos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;500;700&display=swap"
+        rel="stylesheet">
+
+
+
+
+
+    <!-- CSS normal -->
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio | Sara Tinaut | Discogs</title>
+</head>
+
+<body>
+
+
+    <nav>
+
+        <div id="der">
+            <div id="logo"><a href="../index.html"><img src="img/logo.png"></a></div>
+            <button id="boton-hamburguesa">
+                <span>&#9776;</span>
+            </button>
+
+
+            <ul id="menu">
+                <li><a href="../index.html">proyectos</a></li>
+                <hr>
+                <li><a href="../sobreMi/index.html">sobre mi</a></li>
+                <hr>
+                <li class="contactos"><a href="../contactos/index.html">contactos</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div id="contenedoriz">
+        <div id="iz"></div>
+    </div>
+
+    <main>
+        <div class="container">
+            <h2>Discogs</h2>
+        </div>
+    </main>
+
+</body>
+<script>
+    document.getElementById("boton-hamburguesa").addEventListener("click", function () {
+        var menu = document.getElementById("menu");
+        if (menu.style.display === "none") {
+            menu.style.display = "block";
+        } else {
+            menu.style.display = "none";
+        }
+    });
+
+
+</script>
+
+</html>
