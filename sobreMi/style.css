@@ -387,6 +387,7 @@ padding-bottom: 8vh;
 	/* ---- MAIN ----*/
 
 	#titulo {
+		margin-top: 15px;
 		padding-left: 15%;
 		width: 100vw;
 		height: 15vh;
@@ -395,10 +396,13 @@ padding-bottom: 8vh;
 	}
 
 	#titulo div {
+		font-family: 'Yaniko';
 		rotate: -2deg;
 		background-color: #EEEAE6;
 		border-radius: 30px;
-		width: 15vw;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: auto;
 		height: 6vh;
 		display: flex;
 		justify-content: center;
@@ -461,26 +465,25 @@ border: 1px solid  #EEEAE6;
 	}
 
 	.container #horizontal .yo2 h2 {
+		
 		color: #EEEAE6;
-		font-family: 'Yaniko';
-
-
+		font-size: 1.8em;
 	}
 
 	.container #horizontal .yo2 p {
 		color: #EEEAE6;
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 200;
-		font-size: 20px;
-		padding-left: 30px;
-		padding-right: 30px;
+		font-size: 1.7em;
+		padding-left: 5vw;
+		padding-right: 5vw;
 
 	}
 
 	.container #horizontal #vertical2 {
 		/*border: 1px solid rgb(255, 85, 0);*/
 		width: 43vw;
-		height: 42vh;
+		height: auto;
 		margin-right: 5px;
 		margin-top: 50px;
 
