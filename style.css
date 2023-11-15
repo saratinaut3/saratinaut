@@ -5,11 +5,8 @@ body {
 	position: relative;
 	background-color: #1A1A1A;
 	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 0.08em;
 
-	@font-face {
-		font-family: 'Yaniko';
-		src: url('fonts/Yaniko.ttf');
-	}
 }
 
 
@@ -51,7 +48,9 @@ body {
 	}
 
 	nav #der #logo img {
+		margin-top: 0.5vh;
 		height: 3vh;
+
 	}
 
 	* {
@@ -85,7 +84,7 @@ body {
 		text-decoration: none;
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 300;
-		font-size: 50px;
+		font-size: 2em;
 	}
 
 	nav #der #boton-hamburguesa {
@@ -110,8 +109,9 @@ body {
 	#contenedoriz #iz {
 		width: 100vw;
 		height: 5vh;
-		background-color:#1A1A1A;
+		background-color: #1A1A1A;
 		background-image: url(img/saraTinauT2.gif);
+
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -214,6 +214,8 @@ body {
 	}
 
 	#cabecera h1 {
+		margin-bottom: 2vh;
+		margin-top: 2vh;
 		color: #EEEAE6;
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 300;
@@ -460,17 +462,6 @@ body {
 		color: #1A1A1A;
 	}
 
-	footer {
-		margin-top: 0;
-		margin-left: 0;
-		width: 6vw;
-		height: 100vh;
-
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-	}
-
 	#contenedoriz {
 		display: flex;
 		display: flex;
@@ -587,8 +578,8 @@ body {
 	}
 
 	#cabecera .abajo {
-		width: 35px;
-		height: 35px;
+		width: 3vw;
+		height: 3vw;
 		margin-top: 10px;
 		background: url(img/flechaB.png);
 		background-size: contain;
@@ -678,13 +669,14 @@ body {
 		background-position: center;
 		background-size: cover;
 	}
-	#card2 .card-body:hover{
+
+	#card2 .card-body:hover {
 		transition: 2s;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size:105%;
+		background-size: 105%;
 	}
-	
+
 
 	/*TRABAJO 2*/
 
@@ -696,12 +688,13 @@ body {
 		background-size: cover;
 	}
 
-	#card3 .card-body:hover{
+	#card3 .card-body:hover {
 		transition: 2s;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size:105%;
+		background-size: 105%;
 	}
+
 	/*TRABAJO 3*/
 
 
@@ -712,11 +705,11 @@ body {
 		background-size: cover;
 	}
 
-	#card4 .card-body:hover{
+	#card4 .card-body:hover {
 		transition: 2s;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size:105%;
+		background-size: 105%;
 	}
 
 	/*TRABAJO 4*/
@@ -729,11 +722,11 @@ body {
 		background-size: cover;
 	}
 
-	#card5 .card-body:hover{
+	#card5 .card-body:hover {
 		transition: 2s;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size:105%;
+		background-size: 105%;
 	}
 
 	/*TRABAJO 5*/
@@ -746,11 +739,74 @@ body {
 		background-size: cover;
 	}
 
-	#card6 .card-body:hover{
+	#card6 .card-body:hover {
 		transition: 2s;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size:105%;
+		background-size: 105%;
+	} 
+	
+	#card1 .card-body {
+		background-color: #1A1A1A;
+	}
+	/* flechas */
+
+	#trabajos {
+		padding-right: 9vw;
+		width: 4vw;
+		rotate: 2deg;
+		padding-top: 35vh;
+		padding-bottom:35vh;
+	}
+
+	#trabajos #flechas {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+
+	#trabajos #flechas .flechab a{
+		width: 3vw;
+		height: 3vw;
+	}
+
+
+
+	
+	#trabajos .flechab{
+		height: 3vw;
+		width: 3vw;
+		background-image: url(img/flechaB.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:cover ;
+	}
+	#trabajos .flechab:hover{
+		height: 3vw;
+		width: 3vw;
+		background-image: url(img/flechaB2.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:cover ;
+	}
+	#trabajos .flechan{
+		transition: 0.3s;
+		height: 3vw;
+		width: 3vw;
+		background-image: url(img/flechaN.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:cover ;
+	}
+	#trabajos .flechan:hover{
+		transition: 0.3s;
+		height: 3vw;
+		width: 3vw;
+		background-image: url(img/flechaN2.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:cover ;
 	}
 
 }

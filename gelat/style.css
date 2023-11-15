@@ -409,7 +409,6 @@ padding-bottom: 8vh;
 		align-items: center;
 		color: #1A1A1A;
 	}
-
 	/**#titulo hr{
 width: 100vw;
 rotate: -2deg;
@@ -442,6 +441,7 @@ border: 1px solid  #EEEAE6;
 		/*border: 1px solid rgb(255, 85, 0);*/
 		width: 43vw;
 		height: 65vh;
+		
 
 		margin-right: 5px;
 		display: flex;
@@ -459,27 +459,26 @@ border: 1px solid  #EEEAE6;
 	}
 
 	.container #horizontal .yo {
-		background-image: url(img/1.png);
+		background-image: url(img/intro.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
 	}
 
+
 	.container #horizontal .yo2 h2 {
-		color: #EEEAE6;
-		font-family: 'Yaniko';
 		
-
-
+		color: #EEEAE6;
+		font-size: 1.8em;
 	}
 
 	.container #horizontal .yo2 p {
 		color: #EEEAE6;
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 200;
-		font-size: 20px;
-		padding-left: 30px;
-		padding-right: 30px;
+		font-size: 1.7em;
+		padding-left: 5vw;
+		padding-right: 5vw;
 
 	}
 
@@ -487,8 +486,8 @@ border: 1px solid  #EEEAE6;
 		width: 100vw;
 		height: 85vh;
 		rotate: -2deg;
-	
-		background-image: url(img/helados.png);
+		background-color: aqua;
+		background-image: url(img/1.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -496,44 +495,18 @@ border: 1px solid  #EEEAE6;
 
 	.container #horizontal .yo3 {
 		margin-top: 15px;
-		background-image: url(img/granizado.png);
+		background-image: url(img/delante.png);
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
 	}
-	.container .p3{
-		background-color: #999BCD;
-		rotate: -2deg;
-
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: center;
-	}
-	.container .p3 .granizado1{
-		rotate: 2deg;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		background-image: url(img/granizado.png);
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-	.container .p3 .granizado{
-		rotate: 2deg;
-		margin: 15px;
-	}
-
-	.container .p3 .granizado p{
-		margin-right: 40px;
-	}
-
 	.container #horizontal #vertical3{
 		margin: auto;
 		width: 90vw;
 		height: 90vh;
 		rotate: -2deg;
-		background-image: url(img/pro1.png);
+		background-color: aqua;
+		background-image: url(img/2.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -543,7 +516,8 @@ border: 1px solid  #EEEAE6;
 		width: 100vw;
 		height: 85vh;
 		rotate: -2deg;
-		background-image: url(img/);
+		background-color: aqua;
+		background-image: url(img/3.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -555,6 +529,7 @@ border: 1px solid  #EEEAE6;
 		width: 90vw;
 		height: 90vh;
 		rotate: -2deg;
+		background-color: aqua;
 		background-image: url(img/4.png);
 		background-position: center;
 		
