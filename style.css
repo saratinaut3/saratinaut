@@ -408,9 +408,9 @@ body {
 	}
 
 	nav #der ul li {
-		width: 3vw;
+		width: 1.5vw;
 		height: 18vh;
-		margin-bottom: 1vh;
+		margin-bottom: 4vh;
 
 		display: flex;
 		justify-content: center;
@@ -431,36 +431,43 @@ body {
 		transition: 1s;
 	}
 
-	nav #der ul a {
-		color: #EEEAE6;
-		rotate: -90deg;
+	nav #der ul li a {
+		color: transparent;
+		width: 1.5vw;
+		height: 18vh;
+		
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 300;
-		font-size: 20px;
+		font-size: 0;
 		white-space: nowrap;
 		text-decoration: none;
 	}
 
-	nav #der ul li a:hover {
-		opacity: 50%;
+	nav #der ul li:hover {
+		opacity: 30%;
 		transition: 1s;
 	}
 
 	nav #der .contactos {
-		background-color: #EEEAE6;
-		border-radius: 30px;
+		background-image: url(img/menuContactos.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	nav #der .proyectos {
+		background-image: url(img/menuProyectos.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+	nav #der .sobre {
+		background-image: url(img/menuSobre.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 
-	nav #der .contactos a {
-		color: #1A1A1A;
-		font-size: 20px;
-	}
 
-	nav #der .contactos:hover {
-		transition: 0.3s;
-		opacity: 85%;
-		color: #1A1A1A;
-	}
 
 	#contenedoriz {
 		display: flex;
@@ -783,6 +790,7 @@ body {
 		background-size:cover ;
 	}
 	#trabajos .flechab:hover{
+		transition: 0.5s;
 		height: 3vw;
 		width: 3vw;
 		background-image: url(img/flechaB2.png);
@@ -791,7 +799,7 @@ body {
 		background-size:cover ;
 	}
 	#trabajos .flechan{
-		transition: 0.3s;
+		
 		height: 3vw;
 		width: 3vw;
 		background-image: url(img/flechaN.png);
@@ -800,7 +808,7 @@ body {
 		background-size:cover ;
 	}
 	#trabajos .flechan:hover{
-		transition: 0.3s;
+		transition: 0.5s;
 		height: 3vw;
 		width: 3vw;
 		background-image: url(img/flechaN2.png);
