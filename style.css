@@ -408,7 +408,7 @@ body {
 	}
 
 	nav #der ul li {
-		width: 1.5vw;
+		width: 3vw;
 		height: 18vh;
 		margin-bottom: 4vh;
 
@@ -433,7 +433,7 @@ body {
 
 	nav #der ul li a {
 		color: transparent;
-		width: 1.5vw;
+		width: 3vw;
 		height: 18vh;
 		
 		font-family: 'Josefin Sans', sans-serif;
