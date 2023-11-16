@@ -5,8 +5,8 @@ body {
 	position: relative;
 	background-color: #1A1A1A;
 	font-family: 'Josefin Sans', sans-serif;
-	letter-spacing: 0.08em;
-
+	letter-spacing: 0.07em;
+	line-height: 1.5em
 }
 
 
@@ -351,6 +351,70 @@ body {
 		background-position: center;
 		background-size: cover;
 	}
+
+	/* flechas */
+
+	#trabajos {
+		
+		padding-right: 9vw;
+		
+		width: 20vw;
+		rotate: 2deg;
+		padding-top: 40vh;
+		padding-bottom:40vh;
+	}
+
+	#trabajos #flechas {
+		height: 15vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+
+	#trabajos #flechas .flechab a{
+		width: 5vw;
+		height: 5vw;
+	}
+
+
+
+	
+	#trabajos .flechab{
+		height: 5vw;
+		width: 5vw;
+		background-image: url(img/flechaB.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:cover ;
+	}
+	#trabajos .flechab:hover{
+		transition: 0.5s;
+		height: 5vw;
+		width: 5vw;
+		background-image: url(img/flechaB2.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:cover ;
+	}
+	#trabajos .flechan{
+		
+		height: 5vw;
+		width: 5vw;
+		background-image: url(img/flechaN.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:cover ;
+	}
+	#trabajos .flechan:hover{
+		transition: 0.5s;
+		height: 5vw;
+		width: 5vw;
+		background-image: url(img/flechaN2.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size:cover ;
+	}
 }
 
 
@@ -478,7 +542,7 @@ body {
 	}
 
 	#iz {
-		width: 6.5vw;
+		width: 6vw;
 		height: 100vh;
 		position: fixed;
 		z-index: 100;

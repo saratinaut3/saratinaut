@@ -5,11 +5,8 @@ body {
 	position: relative;
 	background-color: #1A1A1A;
 	font-family: 'Josefin Sans', sans-serif;
-
-	@font-face {
-		font-family: 'Yaniko';
-		src: url('fonts/Yaniko.ttf');
-	}
+	letter-spacing: 0.07em;
+	line-height: 1.5em
 }
 
 
@@ -51,7 +48,9 @@ body {
 	}
 
 	nav #der #logo img {
+		margin-top: 0.5vh;
 		height: 3vh;
+
 	}
 
 	* {
@@ -85,7 +84,7 @@ body {
 		text-decoration: none;
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 300;
-		font-size: 50px;
+		font-size: 2em;
 	}
 
 	nav #der #boton-hamburguesa {
@@ -105,8 +104,6 @@ body {
 		height: 5vh;
 		position: absolute;
 		top: 95%;
-		position: fixed;
-		z-index: 100;
 	}
 
 	#contenedoriz #iz {
@@ -114,6 +111,7 @@ body {
 		height: 5vh;
 		background-color: #1A1A1A;
 		background-image: url(img/saraTinauT2.gif);
+
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -125,43 +123,46 @@ body {
 	/* ---- MAIN ----*/
 
 	#titulo {
+		
+		padding-top: 6vh;
 		padding-left: 15%;
 		width: 100vw;
-		height: 12vh;
+		height: 15vh;
 		display: flex;
-		align-items: flex-end;
-	
+		align-items: center;
 	}
 
 	#titulo div {
+
 		rotate: -2deg;
 		background-color: #EEEAE6;
 		border-radius: 30px;
-		width: 25vw;
-		height: 4vh;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: auto;
+		height: 5vh;
+		font-size: 0.8em ;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		color: #1A1A1A;
 	}
 
-	#titulo div h1{
-		font-size: 20px;
-	}
+	/**#titulo hr{
+width: 100vw;
+rotate: -2deg;
+position: absolute;
 
-	.container {
-		padding-top: 3vh;
-
-		color: #EEEAE6;
-		display: flex;
-		align-items: center;
-	}
+left: 5%;
+border: 1px solid  #EEEAE6;
+	}*/
 
 	.container {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 		flex-wrap: nowrap;
+		
 	}
 
 	.container hr {
@@ -170,87 +171,324 @@ body {
 		border: 1px solid #EEEAE6;
 	}
 
+	/* INTRODUCCIÓN*/
+
+	.container #horizontalINTRO {
+		border: 1px solid chartreuse;
+		width: 96vw;
+		height: auto;
+padding-bottom: 2vh;
+padding-top: 2vh;
+
+		display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	}
+
+	.container #horizontalINTRO #vertical {
+		border: 1px solid rgb(255, 85, 0);
+		width: 90vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container #horizontalINTRO #vertical {
+		border: 1px solid rgb(255, 85, 0);
+		width: 90vw;
+		height: auto;
+		margin-bottom: 1vh;
+		margin-top: 1vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.container #horizontalINTRO #vertical2 {
+		margin-bottom: 1vh;
+		margin-top: 1vh;
+		border: 1px solid rgb(255, 85, 0);
+		width: 90vw;
+		height: auto;
+		color: #EEEAE6;
+		font-weight: 200;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.container #horizontalINTRO #vertical2 h2 {
+		font-weight: 300;
+		font-size: 1.7em;
+
+	}
+
+	.container #horizontalINTRO #vertical2 p {
+		font-weight: 200;
+		font-size: 1.2em;
+
+	}
+
+	.container #horizontalINTRO .v1 div {
+		height: 60vh;
+		width: 90vw;
+		background-image: url(img/sobremi.gif);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+
+
+	/* resto */
 	.container #horizontal {
-		/*border: 1px solid chartreuse;*/
-		width: 100vw;
+		border: 1px solid chartreuse;
+		width: 95vw;
+		height: auto;
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+	    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+	
+
+
+	.container #horizontal #vertical {
+		border: 1px solid rgb(255, 85, 0);
+		width: 90vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.container #horizontal #vertical {
-		/*border: 1px solid rgb(255, 85, 0);*/
+		border: 1px solid rgb(255, 85, 0);
 		width: 90vw;
-	
-		margin-bottom:10px;
-		margin-top:10px;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
-	.container #horizontal .yo{
-		height: 50vh;
-	}
-	.container #horizontal .yo2{
-		height: auto;
-	}
 
-
-	.container .p1 {
-	    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-	}
-
-	.container #horizontal .yo {
-		height: 50vh;
-		background-image: url(img/sobremi.gif);
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-
-	.container #horizontal .yo2 h2 {
-		height: auto;
-		color: #EEEAE6;
-		font-family: 'Yaniko';
-
-
-	}
-
-	.container #horizontal .yo2 p {
-		color: #EEEAE6;
-		font-family: 'Josefin Sans', sans-serif;
-		font-weight: 200;
-		font-size: 20px;
-		padding-left: 30px;
-		padding-right: 30px;
-
-	}
 
 	.container #horizontal #vertical2 {
-		/*border: 1px solid rgb(255, 85, 0);*/
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+		border: 1px solid rgb(255, 85, 0);
 		width: 90vw;
-		
-		margin-right: 5px;
-		margin-top: 10px;
+		height: auto;
+		color: #EEEAE6;
+		font-weight: 200;
 
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
-		align-items: center;
-	}
-
-
-	.container .p2 {
-		display: flex;
-		flex-direction: column;
-		flex-wrap: nowrap;
 		justify-content: center;
-		align-items: center;
-padding-bottom: 8vh;
+		align-items: flex-start;
 	}
 
+	.container #horizontal #vertical2 h2 {
+		font-weight: 300;
+		font-size: 1.7em;
+
+	}
+
+	.container #horizontal #vertical2 p {
+		font-weight: 200;
+		font-size: 1.2em;
+
+	}
+
+	
+	.container #horizontal #vertical2 #software{
+		border: 1px solid rgb(255, 0, 166);
+		height: 3vh;
+		width: 90vw;
+		margin-bottom: 1.5vh;
+		
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.container #horizontal #vertical2 #software #circulos{
+		width: 50vw;
+		
+		display: flex;
+		align-items: center;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+	}
+
+	.container #horizontal #vertical2 #software #circulos div{
+		
+		border-radius:100%;
+		height: 3vh;
+		width: 3vh ;
+	}
+	.container #horizontal #vertical2 #software .illustrator .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .illustrator .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .illustrator .c3{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .illustrator .c4{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .illustrator .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	.container #horizontal #vertical2 #software .photoshop .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .photoshop .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .photoshop .c3{
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .photoshop .c4{
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .photoshop .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	.container #horizontal #vertical2 #software .indesing .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .indesing .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .indesing .c3{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .indesing .c4{
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .indesing .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	.container #horizontal #vertical2 #software .eftereffects .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .eftereffects .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .eftereffects .c3{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .eftereffects .c4{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .eftereffects .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	.container #horizontal #vertical2 #software .axd .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .axd .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .axd .c3{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .axd .c4{
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .axd .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	.container #horizontal #vertical2 #software .htmlcss .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .htmlcss .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .htmlcss .c3{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .htmlcss .c4{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .htmlcss .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	.container #horizontal #vertical2 #software .wordpress .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .wordpress .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .wordpress .c3{
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .wordpress .c4{
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .wordpress .c5{
+		border: 1px solid #EEEAE6 ;
+	}
 }
+
 
 
 /* Large devices (desktops, 992px and up)*/
@@ -309,7 +547,7 @@ padding-bottom: 8vh;
 	nav #der ul li {
 		width: 3vw;
 		height: 18vh;
-		margin-bottom: 1vh;
+		margin-bottom: 4vh;
 
 		display: flex;
 		justify-content: center;
@@ -330,36 +568,45 @@ padding-bottom: 8vh;
 		transition: 1s;
 	}
 
-	nav #der ul a {
-		color: #EEEAE6;
-		rotate: -90deg;
+	nav #der ul li a {
+		color: transparent;
+		width: 3vw;
+		height: 18vh;
+
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 300;
-		font-size: 20px;
+		font-size: 0;
 		white-space: nowrap;
 		text-decoration: none;
 	}
 
-	nav #der ul li a:hover {
-		opacity: 50%;
+	nav #der ul li:hover {
+		opacity: 30%;
 		transition: 1s;
 	}
 
 	nav #der .contactos {
-		background-color: #EEEAE6;
-		border-radius: 30px;
+		background-image: url(img/menuContactos.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 
-	nav #der .contactos a {
-		color: #1A1A1A;
-		font-size: 20px;
+	nav #der .proyectos {
+		background-image: url(img/menuProyectos.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 
-	nav #der .contactos:hover {
-		transition: 0.3s;
-		opacity: 85%;
-		color: #1A1A1A;
+	nav #der .sobre {
+		background-image: url(img/menuSobre.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
+
+
 
 	#contenedoriz {
 		display: flex;
@@ -370,7 +617,7 @@ padding-bottom: 8vh;
 	}
 
 	#iz {
-		width: 6.5vw;
+		width: 6vw;
 		height: 100vh;
 		position: fixed;
 		z-index: 100;
@@ -384,10 +631,11 @@ padding-bottom: 8vh;
 
 
 
+
 	/* ---- MAIN ----*/
 
 	#titulo {
-		margin-top: 15px;
+		margin-top: 2vh;
 		padding-left: 15%;
 		width: 100vw;
 		height: 15vh;
@@ -396,7 +644,7 @@ padding-bottom: 8vh;
 	}
 
 	#titulo div {
-		font-family: 'Yaniko';
+
 		rotate: -2deg;
 		background-color: #EEEAE6;
 		border-radius: 30px;
@@ -432,74 +680,325 @@ border: 1px solid  #EEEAE6;
 		border: 1px solid #EEEAE6;
 	}
 
+	/* INTRODUCCIÓN*/
+
+	.container #horizontalINTRO {
+		border: 1px solid chartreuse;
+		width: 88vw;
+		height: auto;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	.container #horizontalINTRO #vertical {
+		border: 1px solid rgb(255, 85, 0);
+		width: 40vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container #horizontalINTRO #vertical {
+		border: 1px solid rgb(255, 85, 0);
+		width: 40vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.container #horizontalINTRO #vertical2 {
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+		border: 1px solid rgb(255, 85, 0);
+		width: 40vw;
+		height: auto;
+		color: #EEEAE6;
+		font-weight: 200;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.container #horizontalINTRO #vertical2 h2 {
+		font-weight: 300;
+		font-size: 1.7em;
+
+	}
+
+	.container #horizontalINTRO #vertical2 p {
+		font-weight: 200;
+		font-size: 1.2em;
+
+	}
+
+	.container #horizontalINTRO .v1 div {
+		height: 60vh;
+		width: 40vw;
+		background-image: url(img/sobremi.gif);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+
+
+	/* resto */
 	.container #horizontal {
-		/*border: 1px solid chartreuse;*/
-		width: 100vw;
+		border: 1px solid chartreuse;
+		width: 88vw;
+		height: auto;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		flex-direction: row;
+	}
+
+
+	.container #horizontal #vertical {
+		border: 1px solid rgb(255, 85, 0);
+		width: 40vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.container #horizontal #vertical {
-		/*border: 1px solid rgb(255, 85, 0);*/
-		width: 43vw;
-		height: 70vh;
+		border: 1px solid rgb(255, 85, 0);
+		width: 40vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
 
-		margin-right: 5px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.container .p1 {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.container #horizontal .yo {
-		background-image: url(img/sobremi.gif);
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-
-	.container #horizontal .yo2 h2 {
-		
-		color: #EEEAE6;
-		font-size: 1.8em;
-	}
-
-	.container #horizontal .yo2 p {
-		color: #EEEAE6;
-		font-family: 'Josefin Sans', sans-serif;
-		font-weight: 200;
-		font-size: 1.7em;
-		padding-left: 5vw;
-		padding-right: 5vw;
-
-	}
 
 	.container #horizontal #vertical2 {
-		/*border: 1px solid rgb(255, 85, 0);*/
-		width: 43vw;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+		border: 1px solid rgb(255, 85, 0);
+		width: 40vw;
 		height: auto;
-		margin-right: 5px;
-		margin-top: 50px;
+		color: #EEEAE6;
+		font-weight: 200;
 
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.container #horizontal #vertical2 h2 {
+		font-weight: 300;
+		font-size: 1.7em;
+
+	}
+
+	.container #horizontal #vertical2 p {
+		font-weight: 200;
+		font-size: 1.2em;
+
+	}
+
+	.container #horizontal .v1 div {
+		height: 60vh;
+		width: 40vw;
+		background-image: url(img/sobremi.gif);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+	.container #horizontal #vertical2 #software{
+		border: 1px solid rgb(255, 0, 166);
+		height: 3vh;
+		width: 40vw;
+		margin-bottom: 1.5vh;
+		
+		display: flex;
+		justify-content: space-between;
 		align-items: center;
 	}
 
-
-	.container .p2 {
+	.container #horizontal #vertical2 #software #circulos{
+		width: 25vw;
+		
 		display: flex;
-		flex-direction: row;
+		align-items: center;
 		flex-wrap: nowrap;
-		justify-content: center;
-		align-items: flex-start;
-
+		justify-content: space-between;
 	}
+
+	.container #horizontal #vertical2 #software #circulos div{
+		
+		border-radius:100%;
+		height: 3vh;
+		width: 3vh ;
+	}
+	.container #horizontal #vertical2 #software .illustrator .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .illustrator .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .illustrator .c3{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .illustrator .c4{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .illustrator .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	.container #horizontal #vertical2 #software .photoshop .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .photoshop .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .photoshop .c3{
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .photoshop .c4{
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .photoshop .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	.container #horizontal #vertical2 #software .indesing .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .indesing .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .indesing .c3{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .indesing .c4{
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .indesing .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	.container #horizontal #vertical2 #software .eftereffects .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .eftereffects .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .eftereffects .c3{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .eftereffects .c4{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .eftereffects .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	.container #horizontal #vertical2 #software .axd .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .axd .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .axd .c3{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .axd .c4{
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .axd .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	.container #horizontal #vertical2 #software .htmlcss .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .htmlcss .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .htmlcss .c3{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .htmlcss .c4{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .htmlcss .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	.container #horizontal #vertical2 #software .wordpress .c1{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .wordpress .c2{
+		background-color:#EEEAE6;
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .wordpress .c3{
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .wordpress .c4{
+		border: 1px solid #EEEAE6 ;
+	}
+	.container #horizontal #vertical2 #software .wordpress .c5{
+		border: 1px solid #EEEAE6 ;
+	}
+
+
+	
 }
