@@ -734,12 +734,16 @@ body {
 	}
 
 	.container #horizontalINTRO #vertical2 h2 {
+		margin-left: 4vw;
+		margin-right: 4vw;
 		font-weight: 300;
 		font-size: 1.7em;
 
 	}
 
 	.container #horizontalINTRO #vertical2 p {
+		margin-left: 4vw;
+		margin-right: 4vw;
 		font-weight: 200;
 		font-size: 1.2em;
 	}
@@ -818,11 +822,15 @@ body {
 	}
 
 	.container #horizontal #vertical2 h2 {
+		margin-left: 4vw;
+		margin-right: 4vw;
 		font-weight: 300;
 		font-size: 1.7em;
 	}
 
 	.container #horizontal #vertical2 p {
+		margin-left: 4vw;
+		margin-right: 4vw;
 		font-weight: 200;
 		font-size: 1.2em;
 	}
@@ -888,6 +896,13 @@ body {
 		background-position: center;
 		background-size: cover;
 	}
+	.container #horizontal .foto6 {
+		background-image: url(img/carteles.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
 
 
 }

@@ -5,19 +5,22 @@ body {
 	position: relative;
 	background-color: #1A1A1A;
 	font-family: 'Josefin Sans', sans-serif;
-
-	@font-face {
-		font-family: 'Yaniko';
-		src: url('fonts/Yaniko.ttf');
-	}
+	letter-spacing: 0.07em;
+	line-height: 1.5em
 }
 
 
 
 /* For mobile phones: */
 @media only screen and (max-width: 992px) {
-	nav {
 
+	body,
+	html {
+		width: 100% !important;
+		overflow-x: hidden !important;
+	}
+
+	nav {
 		margin: 0;
 		width: 100vw;
 		height: 5vh;
@@ -27,14 +30,12 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: nowrap;
-
 	}
 
 	nav {
 		position: fixed;
 		z-index: 100;
 	}
-
 
 	nav #der {
 		background-color: #1A1A1A;
@@ -51,6 +52,7 @@ body {
 	}
 
 	nav #der #logo img {
+		margin-top: 0.5vh;
 		height: 3vh;
 	}
 
@@ -85,7 +87,7 @@ body {
 		text-decoration: none;
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 300;
-		font-size: 50px;
+		font-size: 2em;
 	}
 
 	nav #der #boton-hamburguesa {
@@ -97,10 +99,9 @@ body {
 		cursor: pointer;
 	}
 
-
+	/* gif abajo*/
 
 	#contenedoriz {
-		border-top: 1px solid #EEEAE6;
 		width: 100vw;
 		height: 5vh;
 		position: absolute;
@@ -108,10 +109,14 @@ body {
 	}
 
 	#contenedoriz #iz {
+		border-top: 1px solid #EEEAE6;
 		width: 100vw;
 		height: 5vh;
-		background-color:#1A1A1A;
+		background-color: #1A1A1A;
 		background-image: url(img/saraTinauT2.gif);
+		position: fixed;
+		z-index: 100;
+
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
@@ -119,18 +124,312 @@ body {
 
 
 
-
 	/* ---- MAIN ----*/
-	.container{
-		padding-top: 6vh;
-		
-		color: #EEEAE6;
+
+	#titulo {
+		margin-top: 2vh;
+		padding-left: 10%;
+		width: 100vw;
+		height: 15vh;
 		display: flex;
 		align-items: center;
 	}
 
+	#titulo div {
+		rotate: -2deg;
+		background-color: #EEEAE6;
+		border-radius: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: auto;
+		height: 6vh;
 
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #1A1A1A;
+	}
+
+	/* FLEHAS*/
+
+	#flechas {
+
+		width: 5vw;
+		height: 5vw;
+		position: absolute;
+		top: 90%;
+		left: 7.5%;
+
+		display: flex;
+	}
+
+	#flechas2 {
+
+		width: 5vw;
+		height: 5vw;
+		position: absolute;
+		top: 90%;
+		right: 7.5%;
+
+		display: flex;
+	}
+
+
+	#flechas #flechaI a {
+		position: fixed;
+		z-index: 100;
+
+		width: 5vw;
+		height: 5vw;
+		background-image: url(img/flechaI.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	#flechas #flechaI a:hover {
+		position: fixed;
+		z-index: 100;
+
+		width: 5vw;
+		height: 5vw;
+		background-image: url(img/flechai2.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	#flechas2 #flechaD a {
+		position: fixed;
+		z-index: 100;
+
+		width: 5vw;
+		height: 5vw;
+		background-image: url(img/felchaD.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	#flechas2 #flechaD a:hover {
+		position: fixed;
+		z-index: 100;
+
+		width: 5vw;
+		height: 5vw;
+		background-image: url(img/flechad2.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	.container hr {
+		width: 100vw;
+		rotate: -2deg;
+		border: 1px solid #EEEAE6;
+	}
+
+	/* INTRODUCCIÓN*/
+
+	.container #horizontalINTRO {
+
+		width: 85vw;
+		height: auto;
+
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		;
+	}
+
+	.container #horizontalINTRO #vertical {
+
+		width: 85vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.container #horizontalINTRO #vertical {
+
+		width: 95vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.container #horizontalINTRO #vertical2 {
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		width: 85vw;
+		height: auto;
+		color: #EEEAE6;
+		font-weight: 200;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.container #horizontalINTRO #vertical2 h2 {
+		font-weight: 300;
+		font-size: 1.7em;
+
+	}
+
+	.container #horizontalINTRO #vertical2 p {
+		font-weight: 200;
+		font-size: 1.2em;
+		padding-top: 2vh;
+		padding-bottom: 2vh;
+	}
+
+	.container #horizontalINTRO .v1 div {
+		height: 60vh;
+		width: 80vw;
+		background-image: url(img/intro.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+
+
+
+
+	/* resto */
+
+	.container #horizontal {
+
+		width: 110vw;
+		height: 60vh;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		flex-direction: row;
+	}
+
+
+	.container #horizontal2 {
+
+		width: 90vw;
+		height: auto;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		flex-direction: row;
+	}
+
+	/*imagees horizontales*/
+	.container #horizontal #vertical3 {
+		rotate: -2deg;
+		width: 110vw;
+		height: 60vh;
+		color: #EEEAE6;
+		font-weight: 200;
+
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+
+	}
+
+	.container #horizontal2 #vertical3 {
+		rotate: -2deg;
+		width: 90vw;
+		height: auto;
+		color: #EEEAE6;
+		font-weight: 200;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.container #horizontal .foto1 {
+		background-image: url(img/capturas.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	#horizontal2 #vertical3 video {
+		margin-top: 2vh;
+		margin-bottom: 2vh;
+		rotate: 2deg;
+	}
+
+
+	.container #horizontal .foto3 {
+		background-image: url(img/web.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	
+	#horizontal #vertical3 a {
+		text-decoration:none;
+		rotate: 2deg;
+		padding: 2%;
+		border-radius: 40px;
+		height: 4vh;
+		width: auto;
+		background-color: #EEEAE6;
+		color: #1A1A1A;
+		margin-bottom: 3vh ;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container #horizontal2 .foto4 {
+		background-image: url(img/variantes2.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.container #horizontal .foto5 {
+		background-image: url(img/banner.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.container #horizontal .foto6 {
+		background-image: url(img/carteles.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
 }
+
 
 
 /* Large devices (desktops, 992px and up)*/
@@ -187,7 +486,7 @@ body {
 	}
 
 	nav #der ul li {
-		width: 3vw;
+		width: 2vw;
 		height: 18vh;
 		margin-bottom: 1vh;
 
@@ -210,47 +509,55 @@ body {
 		transition: 1s;
 	}
 
-	nav #der ul a {
-		color: #EEEAE6;
-		rotate: -90deg;
+
+	nav #der ul li a {
+		color: transparent;
+		width: 3vw;
+		height: 18vh;
+
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 300;
-		font-size: 20px;
+		font-size: 0;
 		white-space: nowrap;
 		text-decoration: none;
 	}
 
-	nav #der ul li a:hover {
-		opacity: 50%;
+	nav #der ul li:hover {
+		opacity: 30%;
 		transition: 1s;
 	}
 
 	nav #der .contactos {
-		background-color: #EEEAE6;
-		border-radius: 30px;
+		background-image: url(img/menuContactos.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 
-	nav #der .contactos a {
-		color: #1A1A1A;
-		font-size: 20px;
+	nav #der .proyectos {
+		background-image: url(img/menuProyectos.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 
-	nav #der .contactos:hover {
-		transition: 0.3s;
-		opacity: 85%;
-		color: #1A1A1A;
+	nav #der .sobre {
+		background-image: url(img/menuSobre.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
 	}
 
+	/*gis izquierda*/
 	#contenedoriz {
 		display: flex;
 		display: flex;
 		justify-content: flex-end;
 		align-items: flex-start;
-
 	}
 
 	#iz {
-		width: 6.5vw;
+		width: 6vw;
 		height: 100vh;
 		position: fixed;
 		z-index: 100;
@@ -265,14 +572,370 @@ body {
 
 
 	/* ---- MAIN ----*/
-	
-	.container{
-		padding-left: 12vh;
-		padding-right: 6vh;
-		color: #EEEAE6;
+
+	#titulo {
+		margin-top: 2vh;
+		padding-left: 15%;
+		width: 100vw;
+		height: 15vh;
 		display: flex;
 		align-items: center;
 	}
+
+	#titulo div {
+		rotate: -2deg;
+		background-color: #EEEAE6;
+		border-radius: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+		width: auto;
+		height: 6vh;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #1A1A1A;
+	}
+
+	/* FLEHAS*/
+
+	#flechas {
+
+		width: 3vw;
+		height: 3vw;
+		position: absolute;
+		top: 92%;
+		left: 7.5%;
+
+		display: flex;
+	}
+
+	#flechas2 {
+
+		width: 3vw;
+		height: 3vw;
+		position: absolute;
+		top: 92%;
+		right: 7.5%;
+
+		display: flex;
+	}
+
+
+	#flechas #flechaI a {
+		position: fixed;
+		z-index: 100;
+
+		width: 3vw;
+		height: 3vw;
+		background-image: url(img/flechaI.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	#flechas #flechaI a:hover {
+		position: fixed;
+		z-index: 100;
+
+		width: 3vw;
+		height: 3vw;
+		background-image: url(img/flechai2.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	#flechas2 #flechaD a {
+		position: fixed;
+		z-index: 100;
+
+		width: 3vw;
+		height: 3vw;
+		background-image: url(img/felchaD.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	#flechas2 #flechaD a:hover {
+		position: fixed;
+		z-index: 100;
+
+		width: 3vw;
+		height: 3vw;
+		background-image: url(img/flechad2.png);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+
+
+
+
+
+	.container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+
+	.container hr {
+		width: 100vw;
+		rotate: -2deg;
+		border: 1px solid #EEEAE6;
+	}
+
+	/* INTRODUCCIÓN*/
+
+	.container #horizontalINTRO {
+
+		width: 88vw;
+		height: auto;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	.container #horizontalINTRO #vertical {
+
+		width: 40vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container #horizontalINTRO #vertical {
+
+		width: 40vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.container #horizontalINTRO #vertical2 {
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		width: 40vw;
+		height: auto;
+		color: #EEEAE6;
+		font-weight: 200;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.container #horizontalINTRO #vertical2 h2 {
+		margin-left: 4vw;
+		margin-right: 4vw;
+		font-weight: 300;
+		font-size: 1.7em;
+
+	}
+
+	.container #horizontalINTRO #vertical2 p {
+		margin-left: 4vw;
+		margin-right: 4vw;
+		font-weight: 200;
+		font-size: 1.2em;
+	}
+
+	.container #horizontalINTRO .v1 div {
+		height: 60vh;
+		width: 40vw;
+		background-image: url(img/intro.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+	}
+
+	/* resto */
+	.container #horizontal {
+
+		width: 100vw;
+		height: 90vh;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		flex-direction: row;
+	}
+
+	.container #horizontal2 {
+
+		width: 100vw;
+		height: 40vh;
+
+		display: flex;
+		justify-content: space-evenly;
+		align-items: flex-start;
+		flex-direction: row;
+	}
+
+	.container #horizontal #vertical {
+
+		width: 40vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container #horizontal #vertical {
+
+		width: 40vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container #horizontal #vertical2 {
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		width: 40vw;
+		height: auto;
+		color: #EEEAE6;
+		font-weight: 200;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.container #horizontal #vertical2 h2 {
+		margin-left: 4vw;
+		margin-right: 4vw;
+		font-weight: 300;
+		font-size: 1.7em;
+	}
+
+	.container #horizontal #vertical2 p {
+		margin-left: 4vw;
+		margin-right: 4vw;
+		font-weight: 200;
+		font-size: 1.2em;
+	}
+
+	/*imagees horizontales*/
+	.container #horizontal #vertical3 {
+		rotate: -2deg;
+		width: 100vw;
+		height: 90vh;
+		color: #EEEAE6;
+		font-weight: 200;
+		
+
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+
+	}
+
+	.container #horizontal2 #vertical3 {
+		rotate: -2deg;
+		width: 100vw;
+		height: 40vh;
+		color: #EEEAE6;
+		font-weight: 200;
+
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+
+	}
+
+	#horizontal #vertical3 a {
+		text-decoration:none;
+		rotate: 2deg;
+		padding: 0.8%;
+		border-radius: 40px;
+		height: 3vh;
+		width: auto;
+		background-color: #EEEAE6;
+		color: #1A1A1A;
+		margin-bottom: 3vh ;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container #horizontal .foto1 {
+		background-image: url(img/capturas.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	#horizontal #vertical3 video {
+		rotate: 2deg;
+	}
+
+	/*.container #horizontal .foto2 {
+		background-image: url(img/web.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+	*/
+
+	.container #horizontal .foto3 {
+		background-image: url(img/web.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.container #horizontal2 .foto4 {
+		background-image: url(img/variantes.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.container #horizontal .foto5 {
+		background-image: url(img/banner.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.container #horizontal .foto6 {
+		background-image: url(img/carteles.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
 
 
 }
