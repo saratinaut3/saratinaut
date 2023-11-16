@@ -14,7 +14,6 @@ body {
 /* For mobile phones: */
 @media only screen and (max-width: 992px) {
 	nav {
-
 		margin: 0;
 		width: 100vw;
 		height: 5vh;
@@ -24,14 +23,12 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: nowrap;
-
 	}
 
 	nav {
 		position: fixed;
 		z-index: 100;
 	}
-
 
 	nav #der {
 		background-color: #1A1A1A;
@@ -50,7 +47,6 @@ body {
 	nav #der #logo img {
 		margin-top: 0.5vh;
 		height: 3vh;
-
 	}
 
 	* {
@@ -96,10 +92,9 @@ body {
 		cursor: pointer;
 	}
 
-
+	/* gif abajo*/
 
 	#contenedoriz {
-		border-top: 1px solid #EEEAE6;
 		width: 100vw;
 		height: 5vh;
 		position: absolute;
@@ -107,10 +102,13 @@ body {
 	}
 
 	#contenedoriz #iz {
+		border-top: 1px solid #EEEAE6;
 		width: 100vw;
 		height: 5vh;
 		background-color: #1A1A1A;
 		background-image: url(img/saraTinauT2.gif);
+		position: fixed;
+		z-index: 100;
 
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -119,21 +117,19 @@ body {
 
 
 
-
 	/* ---- MAIN ----*/
 
 	#titulo {
-		
 		padding-top: 6vh;
 		padding-left: 15%;
 		width: 100vw;
 		height: 15vh;
+
 		display: flex;
 		align-items: center;
 	}
 
 	#titulo div {
-
 		rotate: -2deg;
 		background-color: #EEEAE6;
 		border-radius: 30px;
@@ -141,28 +137,19 @@ body {
 		padding-right: 15px;
 		width: auto;
 		height: 5vh;
-		font-size: 0.8em ;
+		font-size: 0.8em;
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		color: #1A1A1A;
 	}
 
-	/**#titulo hr{
-width: 100vw;
-rotate: -2deg;
-position: absolute;
-
-left: 5%;
-border: 1px solid  #EEEAE6;
-	}*/
-
 	.container {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 		flex-wrap: nowrap;
-		
 	}
 
 	.container hr {
@@ -177,14 +164,14 @@ border: 1px solid  #EEEAE6;
 		border: 1px solid chartreuse;
 		width: 96vw;
 		height: auto;
-padding-bottom: 2vh;
-padding-top: 2vh;
+		padding-bottom: 2vh;
+		padding-top: 2vh;
 
 		display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
 	}
 
 	.container #horizontalINTRO #vertical {
@@ -232,7 +219,6 @@ padding-top: 2vh;
 	.container #horizontalINTRO #vertical2 h2 {
 		font-weight: 300;
 		font-size: 1.7em;
-
 	}
 
 	.container #horizontalINTRO #vertical2 p {
@@ -259,25 +245,10 @@ padding-top: 2vh;
 		height: auto;
 		padding-top: 2vh;
 		padding-bottom: 2vh;
-	    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-	
-
-
-	.container #horizontal #vertical {
-		border: 1px solid rgb(255, 85, 0);
-		width: 90vw;
-		height: auto;
-		margin-bottom: 2vh;
-		margin-top: 2vh;
-
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
 		align-items: center;
+		flex-direction: column;
+		flex-wrap: nowrap;
 	}
 
 	.container #horizontal #vertical {
@@ -293,6 +264,18 @@ padding-top: 2vh;
 		align-items: center;
 	}
 
+	.container #horizontal #vertical {
+		border: 1px solid rgb(255, 85, 0);
+		width: 90vw;
+		height: auto;
+		margin-bottom: 2vh;
+		margin-top: 2vh;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
 	.container #horizontal #vertical2 {
 		margin-bottom: 2vh;
@@ -321,171 +304,198 @@ padding-top: 2vh;
 
 	}
 
-	
-	.container #horizontal #vertical2 #software{
+	.container #horizontal #vertical2 #software {
 		border: 1px solid rgb(255, 0, 166);
 		height: 3vh;
 		width: 90vw;
 		margin-bottom: 1.5vh;
-		
+
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
-	.container #horizontal #vertical2 #software #circulos{
+	.container #horizontal #vertical2 #software #circulos {
 		width: 50vw;
-		
+
 		display: flex;
 		align-items: center;
 		flex-wrap: nowrap;
 		justify-content: space-between;
 	}
 
-	.container #horizontal #vertical2 #software #circulos div{
-		
-		border-radius:100%;
+	.container #horizontal #vertical2 #software #circulos div {
+		border-radius: 100%;
 		height: 3vh;
-		width: 3vh ;
+		width: 3vh;
 	}
-	.container #horizontal #vertical2 #software .illustrator .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .illustrator .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .illustrator .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .illustrator .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .illustrator .c3{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .illustrator .c3 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .illustrator .c4{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .illustrator .c4 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .illustrator .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .illustrator .c5 {
+		border: 1px solid #EEEAE6;
 	}
 
 
-	.container #horizontal #vertical2 #software .photoshop .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+	.container #horizontal #vertical2 #software .photoshop .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .photoshop .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .photoshop .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .photoshop .c3{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .photoshop .c3 {
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .photoshop .c4{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .photoshop .c4 {
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .photoshop .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .photoshop .c5 {
+		border: 1px solid #EEEAE6;
 	}
 
 
-	.container #horizontal #vertical2 #software .indesing .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+	.container #horizontal #vertical2 #software .indesing .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .indesing .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .indesing .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .indesing .c3{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .indesing .c3 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .indesing .c4{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .indesing .c4 {
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .indesing .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .indesing .c5 {
+		border: 1px solid #EEEAE6;
 	}
 
 
-	.container #horizontal #vertical2 #software .eftereffects .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+	.container #horizontal #vertical2 #software .eftereffects .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .eftereffects .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .eftereffects .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .eftereffects .c3{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .eftereffects .c3 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .eftereffects .c4{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .eftereffects .c4 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .eftereffects .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .eftereffects .c5 {
+		border: 1px solid #EEEAE6;
 	}
 
 
-	.container #horizontal #vertical2 #software .axd .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+	.container #horizontal #vertical2 #software .axd .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .axd .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .axd .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .axd .c3{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .axd .c3 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .axd .c4{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .axd .c4 {
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .axd .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .axd .c5 {
+		border: 1px solid #EEEAE6;
 	}
 
 
-	.container #horizontal #vertical2 #software .htmlcss .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+	.container #horizontal #vertical2 #software .htmlcss .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .htmlcss .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .htmlcss .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .htmlcss .c3{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .htmlcss .c3 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .htmlcss .c4{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .htmlcss .c4 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .htmlcss .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .htmlcss .c5 {
+		border: 1px solid #EEEAE6;
 	}
 
 
-	.container #horizontal #vertical2 #software .wordpress .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+	.container #horizontal #vertical2 #software .wordpress .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .wordpress .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .wordpress .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .wordpress .c3{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .wordpress .c3 {
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .wordpress .c4{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .wordpress .c4 {
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .wordpress .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .wordpress .c5 {
+		border: 1px solid #EEEAE6;
 	}
 }
 
@@ -545,9 +555,9 @@ padding-top: 2vh;
 	}
 
 	nav #der ul li {
-		width: 3vw;
+		width: 2vw;
 		height: 18vh;
-		margin-bottom: 4vh;
+		margin-bottom: 1vh;
 
 		display: flex;
 		justify-content: center;
@@ -567,12 +577,13 @@ padding-top: 2vh;
 		opacity: 50%;
 		transition: 1s;
 	}
+	
 
 	nav #der ul li a {
 		color: transparent;
 		width: 3vw;
 		height: 18vh;
-
+		
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: 300;
 		font-size: 0;
@@ -591,29 +602,24 @@ padding-top: 2vh;
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
-
 	nav #der .proyectos {
 		background-image: url(img/menuProyectos.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
-
 	nav #der .sobre {
 		background-image: url(img/menuSobre.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
-
-
-
+/*gis izquierda*/
 	#contenedoriz {
 		display: flex;
 		display: flex;
 		justify-content: flex-end;
 		align-items: flex-start;
-
 	}
 
 	#iz {
@@ -631,7 +637,6 @@ padding-top: 2vh;
 
 
 
-
 	/* ---- MAIN ----*/
 
 	#titulo {
@@ -644,7 +649,6 @@ padding-top: 2vh;
 	}
 
 	#titulo div {
-
 		rotate: -2deg;
 		background-color: #EEEAE6;
 		border-radius: 30px;
@@ -652,20 +656,12 @@ padding-top: 2vh;
 		padding-right: 15px;
 		width: auto;
 		height: 6vh;
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		color: #1A1A1A;
 	}
-
-	/**#titulo hr{
-width: 100vw;
-rotate: -2deg;
-position: absolute;
-
-left: 5%;
-border: 1px solid  #EEEAE6;
-	}*/
 
 	.container {
 		display: flex;
@@ -744,7 +740,6 @@ border: 1px solid  #EEEAE6;
 	.container #horizontalINTRO #vertical2 p {
 		font-weight: 200;
 		font-size: 1.2em;
-
 	}
 
 	.container #horizontalINTRO .v1 div {
@@ -770,7 +765,6 @@ border: 1px solid  #EEEAE6;
 		flex-direction: row;
 	}
 
-
 	.container #horizontal #vertical {
 		border: 1px solid rgb(255, 85, 0);
 		width: 40vw;
@@ -796,7 +790,6 @@ border: 1px solid  #EEEAE6;
 		justify-content: center;
 		align-items: center;
 	}
-
 
 	.container #horizontal #vertical2 {
 		margin-bottom: 2vh;
@@ -816,13 +809,11 @@ border: 1px solid  #EEEAE6;
 	.container #horizontal #vertical2 h2 {
 		font-weight: 300;
 		font-size: 1.7em;
-
 	}
 
 	.container #horizontal #vertical2 p {
 		font-weight: 200;
 		font-size: 1.2em;
-
 	}
 
 	.container #horizontal .v1 div {
@@ -833,172 +824,200 @@ border: 1px solid  #EEEAE6;
 		background-position: center;
 		background-size: contain;
 	}
-	.container #horizontal #vertical2 #software{
+
+	.container #horizontal #vertical2 #software {
 		border: 1px solid rgb(255, 0, 166);
 		height: 3vh;
 		width: 40vw;
 		margin-bottom: 1.5vh;
-		
+
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
-	.container #horizontal #vertical2 #software #circulos{
+	.container #horizontal #vertical2 #software #circulos {
 		width: 25vw;
-		
+
 		display: flex;
 		align-items: center;
 		flex-wrap: nowrap;
 		justify-content: space-between;
 	}
 
-	.container #horizontal #vertical2 #software #circulos div{
-		
-		border-radius:100%;
+	.container #horizontal #vertical2 #software #circulos div {
+
+		border-radius: 100%;
 		height: 3vh;
-		width: 3vh ;
+		width: 3vh;
 	}
-	.container #horizontal #vertical2 #software .illustrator .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .illustrator .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .illustrator .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .illustrator .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .illustrator .c3{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .illustrator .c3 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .illustrator .c4{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .illustrator .c4 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .illustrator .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .illustrator .c5 {
+		border: 1px solid #EEEAE6;
 	}
 
 
-	.container #horizontal #vertical2 #software .photoshop .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+	.container #horizontal #vertical2 #software .photoshop .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .photoshop .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .photoshop .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .photoshop .c3{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .photoshop .c3 {
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .photoshop .c4{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .photoshop .c4 {
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .photoshop .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .photoshop .c5 {
+		border: 1px solid #EEEAE6;
 	}
 
 
-	.container #horizontal #vertical2 #software .indesing .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+	.container #horizontal #vertical2 #software .indesing .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .indesing .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .indesing .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .indesing .c3{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .indesing .c3 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .indesing .c4{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .indesing .c4 {
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .indesing .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .indesing .c5 {
+		border: 1px solid #EEEAE6;
 	}
 
 
-	.container #horizontal #vertical2 #software .eftereffects .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+	.container #horizontal #vertical2 #software .eftereffects .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .eftereffects .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .eftereffects .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .eftereffects .c3{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .eftereffects .c3 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .eftereffects .c4{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .eftereffects .c4 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .eftereffects .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .eftereffects .c5 {
+		border: 1px solid #EEEAE6;
 	}
 
 
-	.container #horizontal #vertical2 #software .axd .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+	.container #horizontal #vertical2 #software .axd .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .axd .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .axd .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .axd .c3{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .axd .c3 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .axd .c4{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .axd .c4 {
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .axd .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .axd .c5 {
+		border: 1px solid #EEEAE6;
 	}
 
 
-	.container #horizontal #vertical2 #software .htmlcss .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+	.container #horizontal #vertical2 #software .htmlcss .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .htmlcss .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .htmlcss .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .htmlcss .c3{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .htmlcss .c3 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .htmlcss .c4{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .htmlcss .c4 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
-	.container #horizontal #vertical2 #software .htmlcss .c5{
-		border: 1px solid #EEEAE6 ;
+
+	.container #horizontal #vertical2 #software .htmlcss .c5 {
+		border: 1px solid #EEEAE6;
 	}
 
 
-	.container #horizontal #vertical2 #software .wordpress .c1{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
-	}
-	.container #horizontal #vertical2 #software .wordpress .c2{
-		background-color:#EEEAE6;
-		border: 1px solid #EEEAE6 ;
-	}
-	.container #horizontal #vertical2 #software .wordpress .c3{
-		border: 1px solid #EEEAE6 ;
-	}
-	.container #horizontal #vertical2 #software .wordpress .c4{
-		border: 1px solid #EEEAE6 ;
-	}
-	.container #horizontal #vertical2 #software .wordpress .c5{
-		border: 1px solid #EEEAE6 ;
+	.container #horizontal #vertical2 #software .wordpress .c1 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 	}
 
+	.container #horizontal #vertical2 #software .wordpress .c2 {
+		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
+	}
 
-	
+	.container #horizontal #vertical2 #software .wordpress .c3 {
+		border: 1px solid #EEEAE6;
+	}
+
+	.container #horizontal #vertical2 #software .wordpress .c4 {
+		border: 1px solid #EEEAE6;
+	}
+
+	.container #horizontal #vertical2 #software .wordpress .c5 {
+		border: 1px solid #EEEAE6;
+	}
+
 }

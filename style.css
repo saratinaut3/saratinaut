@@ -10,11 +10,9 @@ body {
 }
 
 
-
 /* For mobile phones: */
 @media only screen and (max-width: 992px) {
 	nav {
-
 		margin: 0;
 		width: 100vw;
 		height: 5vh;
@@ -24,14 +22,12 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: nowrap;
-
 	}
 
 	nav {
 		position: fixed;
 		z-index: 100;
 	}
-
 
 	nav #der {
 		background-color: #1A1A1A;
@@ -50,7 +46,6 @@ body {
 	nav #der #logo img {
 		margin-top: 0.5vh;
 		height: 3vh;
-
 	}
 
 	* {
@@ -96,10 +91,9 @@ body {
 		cursor: pointer;
 	}
 
-
+	/*gif abajo*/
 
 	#contenedoriz {
-		border-top: 1px solid #EEEAE6;
 		width: 100vw;
 		height: 5vh;
 		position: absolute;
@@ -107,17 +101,17 @@ body {
 	}
 
 	#contenedoriz #iz {
+		border-top: 1px solid #EEEAE6;
 		width: 100vw;
 		height: 5vh;
 		background-color: #1A1A1A;
 		background-image: url(img/saraTinauT2.gif);
-
+		position: fixed;
+		z-index: 100;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center;
 	}
-
-
 
 
 	/* ---- MAIN ----*/
@@ -138,7 +132,6 @@ body {
 	.container {
 		height: 95vh;
 		width: 100vw;
-
 
 		margin-top: 0;
 		margin-left: 0;
@@ -161,7 +154,6 @@ body {
 
 	#card1 {
 		--index: 1;
-
 	}
 
 	#card2 {
@@ -184,11 +176,8 @@ body {
 		--index: 6;
 	}
 
-
-
 	.card {
 		position: sticky;
-
 		top: 0;
 		padding-top: calc(var(--index) * var(--cardTopPadding));
 	}
@@ -203,14 +192,12 @@ body {
 		align-items: center;
 	}
 
-
 	#cabecera .titulos {
 		margin-top: 35vw;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
 	}
 
 	#cabecera h1 {
@@ -237,7 +224,6 @@ body {
 		background: url(img/flechaB2.png);
 		background-size: contain;
 		background-repeat: no-repeat;
-
 	}
 
 	#cabecera .nombre {
@@ -276,8 +262,6 @@ body {
 
 	/**/
 
-
-
 	#trabajos img {
 		width: 35px;
 		height: 35px;
@@ -286,7 +270,6 @@ body {
 	#card1 .card-body {
 		background-color: #1A1A1A;
 	}
-
 
 	.card-body {
 		box-sizing: border-box;
@@ -299,7 +282,6 @@ body {
 		justify-content: flex-end;
 		transition: all 1s;
 	}
-
 
 
 	/*TRABAJO 1*/
@@ -355,9 +337,7 @@ body {
 	/* flechas */
 
 	#trabajos {
-		
 		padding-right: 9vw;
-		
 		width: 20vw;
 		rotate: 2deg;
 		padding-top: 40vh;
@@ -370,15 +350,11 @@ body {
 		flex-direction: column;
 		justify-content: space-between;
 	}
-	
 
 	#trabajos #flechas .flechab a{
 		width: 5vw;
 		height: 5vw;
 	}
-
-
-
 	
 	#trabajos .flechab{
 		height: 5vw;
@@ -472,9 +448,9 @@ body {
 	}
 
 	nav #der ul li {
-		width: 3vw;
+		width: 2vw;
 		height: 18vh;
-		margin-bottom: 4vh;
+		margin-bottom: 1vh;
 
 		display: flex;
 		justify-content: center;
@@ -494,6 +470,7 @@ body {
 		opacity: 50%;
 		transition: 1s;
 	}
+	
 
 	nav #der ul li a {
 		color: transparent;
@@ -531,14 +508,12 @@ body {
 		background-size: contain;
 	}
 
-
-
+/*gif izquierda*/
 	#contenedoriz {
 		display: flex;
 		display: flex;
 		justify-content: flex-end;
 		align-items: flex-start;
-
 	}
 
 	#iz {
@@ -555,7 +530,6 @@ body {
 	}
 
 
-
 	/* ---- MAIN ----*/
 	:root {
 		--cards: 6;
@@ -567,7 +541,6 @@ body {
 	.container {
 		height: 100vh;
 		width: 100vw;
-
 		margin-top: 0;
 		margin-left: 0;
 		margin-right: 0;
@@ -578,7 +551,6 @@ body {
 		list-style: none;
 		padding-top: 0;
 		display: grid;
-
 		justify-content: center;
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(var(--cards), var(--cardHeight));
@@ -612,8 +584,6 @@ body {
 		--index: 6;
 	}
 
-
-
 	.card {
 		position: sticky;
 		rotate: -2deg;
@@ -631,13 +601,11 @@ body {
 		align-items: center;
 	}
 
-
 	#cabecera .titulos {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-
 	}
 
 	#cabecera h1 {
@@ -708,7 +676,6 @@ body {
 		justify-content: flex-end;
 	}
 
-
 	#trabajos img {
 		width: 35px;
 		height: 35px;
@@ -717,7 +684,6 @@ body {
 	#card1 .card-body {
 		background-color: #1A1A1A;
 	}
-
 
 	.card-body {
 		box-sizing: border-box;
@@ -729,10 +695,7 @@ body {
 		transition: all 1s;
 	}
 
-
-
 	/*TRABAJO 1*/
-
 
 	#card2 .card-body {
 		background-image: url(img/vino.png);
@@ -748,9 +711,7 @@ body {
 		background-size: 105%;
 	}
 
-
 	/*TRABAJO 2*/
-
 
 	#card3 .card-body {
 		background-image: url(img/revuelta.png);
@@ -768,7 +729,6 @@ body {
 
 	/*TRABAJO 3*/
 
-
 	#card4 .card-body {
 		background-image: url(img/discogs.png);
 		background-repeat: no-repeat;
@@ -785,7 +745,6 @@ body {
 
 	/*TRABAJO 4*/
 
-
 	#card5 .card-body {
 		background-image: url(img/helados.png);
 		background-repeat: no-repeat;
@@ -801,7 +760,6 @@ body {
 	}
 
 	/*TRABAJO 5*/
-
 
 	#card6 .card-body {
 		background-image: url(img/tortuga.png);
@@ -820,6 +778,7 @@ body {
 	#card1 .card-body {
 		background-color: #1A1A1A;
 	}
+
 	/* flechas */
 
 	#trabajos {
@@ -841,9 +800,6 @@ body {
 		width: 3vw;
 		height: 3vw;
 	}
-
-
-
 	
 	#trabajos .flechab{
 		height: 3vw;
@@ -880,5 +836,4 @@ body {
 		background-repeat: no-repeat;
 		background-size:cover ;
 	}
-
 }
