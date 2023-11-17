@@ -666,6 +666,22 @@ body {
 		align-items: center;
 		justify-content: center;
 	}
+	/*
+
+	.container li .dentro{
+		height: 100vh;
+		width: 100vw;
+		
+	}
+
+	.container li .dentro:hover{
+		transition: 2s;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 105%;
+
+	}
+	*/
 
 	/**/
 	#trabajos {
@@ -705,10 +721,7 @@ body {
 	}
 
 	#card2 .card-body:hover {
-		transition: 2s;
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 105%;
+		
 	}
 
 	/*TRABAJO 2*/
@@ -718,6 +731,13 @@ body {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+	}
+
+	#card2 .card-body:hover {
+		transition: 2s;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 105%;
 	}
 
 	#card3 .card-body:hover {

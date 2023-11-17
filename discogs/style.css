@@ -782,7 +782,7 @@ body {
 	.container #horizontal2 {
 
 		width: 100vw;
-		height: 40vh;
+		height: 90vh;
 
 		display: flex;
 		justify-content: space-evenly;
@@ -863,7 +863,7 @@ body {
 	.container #horizontal2 #vertical3 {
 		rotate: -2deg;
 		width: 100vw;
-		height: 40vh;
+		height: 90vh;
 		color: #EEEAE6;
 		font-weight: 200;
 
@@ -896,8 +896,11 @@ body {
 		background-size: cover;
 	}
 
-	#horizontal #vertical3 video {
+	#horizontal2 #vertical3 video {
+		width: auto;
+		height: 90%;
 		rotate: 2deg;
+		margin: 2%;
 	}
 
 	/*.container #horizontal .foto2 {
