@@ -5,7 +5,6 @@ body {
 	position: relative;
 	background-color: #1A1A1A;
 	font-family: 'Josefin Sans', sans-serif;
-	letter-spacing: 0.07em;
 	line-height: 1.5em
 }
 
@@ -666,7 +665,7 @@ body {
 		align-items: center;
 		justify-content: center;
 	}
-	/*
+
 
 	.container li .dentro{
 		height: 100vh;
@@ -681,7 +680,7 @@ body {
 		background-size: 105%;
 
 	}
-	*/
+	
 
 	/**/
 	#trabajos {

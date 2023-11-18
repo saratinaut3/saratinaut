@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    height: 94vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: transform 0.5s;
+}
+
+.container1 {
+    background-color: #ffcccb;
+}
+
+.container2 {
+    background-color: #a0e7e5;
+}
+
+.container3 {
+    background-color: #f7ddbb;
+}
+
+/* Cambia la posición cuando haces scroll */
+body.scrolled .container2 {
+    transform: translateY(-100vh);
+}
+
+body.scrolled .container3 {
+    transform: translateY(-200vh);
+}

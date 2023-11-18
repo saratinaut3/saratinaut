@@ -5,7 +5,6 @@ body {
 	position: relative;
 	background-color: #1A1A1A;
 	font-family: 'Josefin Sans', sans-serif;
-	letter-spacing: 0.07em;
 	line-height: 1.5em
 }
 
@@ -228,6 +227,7 @@ body {
 		align-items: center;
 		flex-direction: column;
 		flex-wrap: nowrap;
+		margin-bottom: 7vh;
 	}
 
 	.container hr {
@@ -369,42 +369,28 @@ body {
 	}
 
 	.container #horizontal .foto1 {
-		background-image: url(img/pro4.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-	}
-
-	.container #horizontal2 .foto2 {
-		background-image: url(img/patron2.png);
+		background-image: url(img/helados.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
 
 	.container #horizontal .foto3 {
-		background-image: url(img/protesta.jpg);
+		background-image: url(img/pro1.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
 
-	.container #horizontal2 .foto4 {
-		background-image: url(img/variantes2.png);
+	.container #horizontal .foto4 {
+		background-image: url(img/pro2.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
 
 	.container #horizontal .foto5 {
-		background-image: url(img/banner.jpg);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-	}
-
-	.container #horizontal .foto6 {
-		background-image: url(img/carteles.jpg);
+		background-image: url(img/pro3.png);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;

@@ -5,7 +5,6 @@ body {
 	position: relative;
 	background-color: #1A1A1A;
 	font-family: 'Josefin Sans', sans-serif;
-	letter-spacing: 0.07em;
 	line-height: 1.5em
 }
 
@@ -228,6 +227,7 @@ body {
 		align-items: center;
 		flex-direction: column;
 		flex-wrap: nowrap;
+		margin-bottom: 7vh;
 	}
 
 	.container hr {
@@ -323,7 +323,7 @@ body {
 	.container #horizontal {
 
 		width: 110vw;
-		height: 60vh;
+		height: 40vh;
 
 		display: flex;
 		justify-content: space-evenly;
@@ -334,7 +334,7 @@ body {
 
 	.container #horizontal2 {
 
-		width: 90vw;
+		width: auto;
 		height: auto;
 
 		display: flex;
@@ -347,7 +347,7 @@ body {
 	.container #horizontal #vertical3 {
 		rotate: -2deg;
 		width: 110vw;
-		height: 60vh;
+		height: 40vh;
 		color: #EEEAE6;
 		font-weight: 200;
 
@@ -359,7 +359,7 @@ body {
 
 	.container #horizontal2 #vertical3 {
 		rotate: -2deg;
-		width: 90vw;
+		width: auto;
 		height: auto;
 		color: #EEEAE6;
 		font-weight: 200;
@@ -377,11 +377,8 @@ body {
 		background-size: cover;
 	}
 
-	#horizontal2 #vertical3 video {
-		margin-top: 2vh;
-		margin-bottom: 2vh;
-		rotate: 2deg;
-	}
+	
+		
 
 
 	.container #horizontal .foto3 {
@@ -420,6 +417,16 @@ body {
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
+	}
+
+	#horizontal2 #vertical3 video {
+		width: 98%;
+		height: auto;
+		rotate: 2deg;
+
+		margin-top: 4vh;
+		margin-bottom: 4vh;
+		rotate: 2deg;
 	}
 
 	.container #horizontal .foto6 {
