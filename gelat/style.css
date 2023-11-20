@@ -177,7 +177,8 @@ body {
 	#flechas #flechaI a {
 		position: fixed;
 		z-index: 100;
-
+		border-radius: 50px;
+		box-shadow: -3px 3px 10px rgba(26,26,26,0.2);
 		width: 5vw;
 		height: 5vw;
 		background-image: url(img/flechaI.png);
@@ -201,7 +202,8 @@ body {
 	#flechas2 #flechaD a {
 		position: fixed;
 		z-index: 100;
-
+		border-radius: 50px;
+		box-shadow: 3px 3px 10px rgba(26,26,26,0.2);
 		width: 5vw;
 		height: 5vw;
 		background-image: url(img/felchaD.png);
@@ -369,28 +371,28 @@ body {
 	}
 
 	.container #horizontal .foto1 {
-		background-image: url(img/helados.png);
+		background-image: url(img/helados.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
 
 	.container #horizontal .foto3 {
-		background-image: url(img/pro1.png);
+		background-image: url(img/pro1.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
 
 	.container #horizontal .foto4 {
-		background-image: url(img/pro2.png);
+		background-image: url(img/pro2.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
 
 	.container #horizontal .foto5 {
-		background-image: url(img/pro3.png);
+		background-image: url(img/pro3.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -441,7 +443,7 @@ body {
 		flex-wrap: nowrap;
 		align-items: center;
 		justify-content: flex-start;
-		border-right: 2px solid #EEEAE6;
+		border-right: 1px solid #EEEAE6;
 	}
 
 	nav #der ul {
@@ -529,7 +531,7 @@ body {
 		position: fixed;
 		z-index: 100;
 		background-color: #1A1A1A;
-		border-left: 2px solid #EEEAE6;
+		border-left: 1px solid #EEEAE6;
 		background-image: url(img/saraTinauT.gif);
 		background-position: center;
 		background-repeat: no-repeat;
@@ -547,22 +549,25 @@ body {
 		height: 15vh;
 		display: flex;
 		align-items: center;
+		
 	}
 
 	#titulo div {
 		rotate: -2deg;
-		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 		border-radius: 30px;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
 		width: auto;
-		height: 6vh;
+		height: 7vh;
+
 
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: #1A1A1A;
+		color: #EEEAE6;
 	}
+
 
 	/* FLEHAS*/
 
@@ -573,6 +578,7 @@ body {
 		position: absolute;
 		top: 92%;
 		left: 7.5%;
+		
 
 		display: flex;
 	}
@@ -584,6 +590,7 @@ body {
 		position: absolute;
 		top: 92%;
 		right: 7.5%;
+		
 
 		display: flex;
 	}
@@ -592,6 +599,9 @@ body {
 	#flechas #flechaI a {
 		position: fixed;
 		z-index: 100;
+		border-radius: 50px;
+		border-radius: 50px;
+		box-shadow: -3px 3px 10px rgba(26,26,26,0.2);
 
 		width: 3vw;
 		height: 3vw;
@@ -616,6 +626,9 @@ body {
 	#flechas2 #flechaD a {
 		position: fixed;
 		z-index: 100;
+		border-radius: 50px;
+		box-shadow: 3px 3px 10px rgba(26,26,26,0.2);
+		
 
 		width: 3vw;
 		height: 3vw;
@@ -711,16 +724,16 @@ body {
 	}
 
 	.container #horizontalINTRO #vertical2 h2 {
-		margin-left: 4vw;
-		margin-right: 4vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
 		font-weight: 300;
 		font-size: 1.7em;
 
 	}
 
 	.container #horizontalINTRO #vertical2 p {
-		margin-left: 4vw;
-		margin-right: 4vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
 		font-weight: 200;
 		font-size: 1.2em;
 	}
@@ -848,7 +861,7 @@ body {
 	}
 
 	.container #horizontal .foto1 {
-		background-image: url(img/pro4.png);
+		background-image: url(img/helados.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -856,20 +869,20 @@ body {
 
 
 	.container #horizontal .foto3 {
-		background-image: url(img/pro1.png);
+		background-image: url(img/pro1.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
 
 	.container #horizontal .foto4 {
-		background-image: url(img/pro3.png);
+		background-image: url(img/pro3.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
 	}
 	.container #horizontal .foto5 {
-		background-image: url(img/pro2.png);
+		background-image: url(img/pro2.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;

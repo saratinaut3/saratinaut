@@ -547,6 +547,7 @@ body {
 	}
 
 	#cards {
+		margin: auto;
 		list-style: none;
 		padding-top: 0;
 		display: grid;
@@ -601,6 +602,7 @@ body {
 	}
 
 	#cabecera .titulos {
+		padding-right: 40px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -616,6 +618,7 @@ body {
 	}
 
 	#cabecera .abajo {
+		padding-right: 40px;
 		width: 3vw;
 		height: 3vw;
 		margin-top: 10px;
@@ -708,12 +711,13 @@ body {
 		align-items: stretch;
 		justify-content: flex-end;
 		transition: all 1s;
+		box-shadow: 10px 10px 30px #1A1A1A;
 	}
 
 	/*TRABAJO 1*/
 
 	#card2 .card-body {
-		background-image: url(img/vino.png);
+		background-image: url(img/vino.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -726,7 +730,7 @@ body {
 	/*TRABAJO 2*/
 
 	#card3 .card-body {
-		background-image: url(img/revuelta.png);
+		background-image: url(img/revuelta.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -749,7 +753,7 @@ body {
 	/*TRABAJO 3*/
 
 	#card4 .card-body {
-		background-image: url(img/discogs.png);
+		background-image: url(img/discogs.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -765,7 +769,7 @@ body {
 	/*TRABAJO 4*/
 
 	#card5 .card-body {
-		background-image: url(img/helados.png);
+		background-image: url(img/helados.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;
@@ -781,7 +785,7 @@ body {
 	/*TRABAJO 5*/
 
 	#card6 .card-body {
-		background-image: url(img/tortuga.png);
+		background-image: url(img/tortuga.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: cover;

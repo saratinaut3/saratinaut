@@ -161,7 +161,6 @@ body {
 	/* INTRODUCCIÓN*/
 
 	.container #horizontalINTRO {
-		border: 1px solid chartreuse;
 		width: 96vw;
 		height: auto;
 		padding-bottom: 2vh;
@@ -187,7 +186,6 @@ body {
 	}
 
 	.container #horizontalINTRO #vertical {
-		border: 1px solid rgb(255, 85, 0);
 		width: 90vw;
 		height: auto;
 		margin-bottom: 1vh;
@@ -536,7 +534,7 @@ body {
 		flex-wrap: nowrap;
 		align-items: center;
 		justify-content: flex-start;
-		border-right: 2px solid #EEEAE6;
+		border-right: 1px solid #EEEAE6;
 	}
 
 	nav #der ul {
@@ -621,7 +619,7 @@ body {
 		position: fixed;
 		z-index: 100;
 		background-color: #1A1A1A;
-		border-left: 2px solid #EEEAE6;
+		border-left: 1px solid #EEEAE6;
 		background-image: url(img/saraTinauT.gif);
 		background-position: center;
 		background-repeat: no-repeat;
@@ -639,21 +637,23 @@ body {
 		height: 15vh;
 		display: flex;
 		align-items: center;
+		
 	}
 
 	#titulo div {
 		rotate: -2deg;
-		background-color: #EEEAE6;
+		border: 1px solid #EEEAE6;
 		border-radius: 30px;
-		padding-left: 15px;
-		padding-right: 15px;
+		padding-left: 20px;
+		padding-right: 20px;
 		width: auto;
-		height: 6vh;
+		height: 7vh;
+
 
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: #1A1A1A;
+		color: #EEEAE6;
 	}
 
 	.container {
@@ -721,16 +721,16 @@ body {
 	}
 
 	.container #horizontalINTRO #vertical2 h2 {
-		margin-left: 4vw;
-		margin-right: 4vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
 		font-weight: 300;
 		font-size: 1.7em;
 
 	}
 
 	.container #horizontalINTRO #vertical2 p {
-		margin-left: 4vw;
-		margin-right: 4vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
 		font-weight: 200;
 		font-size: 1.2em;
 	}
@@ -796,15 +796,15 @@ body {
 	}
 
 	.container #horizontal #vertical2 h2 {
-		margin-left: 4vw;
-		margin-right: 4vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
 		font-weight: 300;
 		font-size: 1.7em;
 	}
 
 	.container #horizontal #vertical2 p {
-		margin-left: 4vw;
-		margin-right: 4vw;
+		margin-left: 5vw;
+		margin-right: 5vw;
 		font-weight: 200;
 		font-size: 1.2em;
 	}
@@ -820,7 +820,7 @@ body {
 
 	.container #horizontal #vertical2 #software {
 		height: 3vh;
-		width: 40vw;
+		width: 34vw;
 		margin-bottom: 1.5vh;
 
 		display: flex;
@@ -829,7 +829,7 @@ body {
 	}
 
 	.container #horizontal #vertical2 #software #circulos {
-		width: 20vw;
+		width: 15vw;
 
 		display: flex;
 		align-items: center;
