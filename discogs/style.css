@@ -861,6 +861,14 @@ body {
 
 	}
 
+	.container #horizontal #vertical3 iframe {
+		rotate: 2deg;
+		width: 100vw;
+		height: 85vh;
+	margin: auto;
+
+	}
+
 	.container #horizontal2 #vertical3 {
 		rotate: -2deg;
 		width: 100vw;
